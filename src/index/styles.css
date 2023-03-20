@@ -1,3 +1,18 @@
-html {
-    background-color: slategray;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+:root {
+    --header-background-color: #ABC4A1;
+    --main-background-color: #9DB4AB;
+    --card-background-color: white;
+}
+
+html {
+    background-color: var(--main-background-color);
+}
+
+
+

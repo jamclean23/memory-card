@@ -5,17 +5,22 @@
 
 // React
 import React from 'react';
-import { Component }  from './components/Component.js';
-
+import { Card } from './components/Card/Card.js'
+import { AppHeader } from './components/AppHeader/AppHeader.js';
+import './app.css'
 
 // ====== FUNCTIONS ======
 
 // Main app function 
 function App () {
     return (
-        <div>
-            <h1>Content goes here</h1>
-            <Component />
+        <div className='App'>
+            <AppHeader />
+            <div className='cardsContainer'>
+                <Card />
+                <Card />
+                <Card />
+            </div>
         </div>
     );
 }

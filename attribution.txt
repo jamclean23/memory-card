@@ -1,3 +1,8 @@
+Icon
+    - Menu Icon: https://icons8.com/icon/vNkcTvQx93Sj/hamburger-menu icon by https://icons8.com">Icons8
+
+Trees:  
+
 American Hornbeam  
     - Overview: Sherief Saleh, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
     - Fruit: Paul Wray, Iowa State University https://naturalresources.extension.iastate.edu/files/resize/encyclopedia/images/blue_beech4-400x300.jpg
