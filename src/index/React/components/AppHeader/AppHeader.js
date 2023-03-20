@@ -3,8 +3,9 @@
 // IMPORTS
 // ####################################
 
-import React, { useState } from'react';
+import React, { useState } from 'react';
 import './app-header.css';
+import hamburger from '../../../assets/icons/hamburger.png'
 
 
 // ####################################
@@ -12,9 +13,15 @@ import './app-header.css';
 // ####################################
 
 function AppHeader (props) {
+
+    function handleMenuClick () {
+        console.log('I have been clicked upon');
+    }
+
     return(
         <div className='AppHeader'>
-            <p>ID that tree!</p>
+            <h1 className='hero'>ID That Tree!</h1>
+            <img className='hamburger' src={hamburger} alt='menu' onClick={handleMenuClick}/>
         </div>
     );
 }
