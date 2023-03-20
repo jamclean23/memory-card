@@ -1,5 +1,59 @@
+American Hornbeam  
+    - Overview:
+    - Fruit:
+    - Leaf:
+
+Eastern Hemlock
+    - Overview:
+    - Cone:
+    - Needle:
+
+Eastern Red Cedar:
+    - Overview:
+    - Cone:
+    - Needle:
+
+Flowering Dogwood:
+    - Overview:
+    - Fruit:
+    - Leaf:
+
+Fraser Fir:
+    - Overview:
+    - Cone:
+    - Needle:
+
+Northern Red Oak
+    - Overview:
+    - Fruit:
+    - Leaf:
+
+Red Spruce
+    - Overview:
+    - Fruit:
+    - Leaf:
+
+River Birch
+    - Overview:
+    - Fruit:
+    - Leaf:
+
 Table mountain Pine
     - Overview: Bruce Marlin - Own work: http://www.cirrusimage.com/tree_table_mountain_pine.htm
     - Cone: Bruce Marlin - Own work: http://www.cirrusimage.com/tree_table_mountain_pine.htm
     - Needle: Chris Evans, University of Illinois, Bugwood.org,  https://www.invasive.org/browse/detail.cfm?imgnum=1342085
 
+Tulip Tree
+    - Overview:
+    - Fruit:
+    - Leaf:
+
+White Pine
+    - Overview:
+    - Cone:
+    - Needle:
+
+Yellow Buckeye
+    - Overview:
+    - Fruit:
+    - Leaf:
