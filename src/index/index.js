@@ -13,6 +13,7 @@ import { createRoot } from 'react-dom/client';
 // Main React App
 import { App } from './React/App.js';
 
+// const testImport = require.context('./assets/trees/', true, /.jpg$/);
 
 // ====== RENDER ======
 

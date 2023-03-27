@@ -2,9 +2,16 @@
 
 .Card {
     height: 25vh;
-    width: 100%;
+    width: 90vw;
     box-shadow: 0 0 2px black;
     background-color: beige ;
     border-radius: 2px;
     padding: .25rem;
+    overflow: hidden;
+}
+
+.overviewImg {
+    height: 20vh;
+    border-radius: 6px;
+    max-width: 45vw;
 }

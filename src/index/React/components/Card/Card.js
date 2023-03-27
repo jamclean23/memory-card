@@ -10,7 +10,8 @@ import React, { useState } from 'react';
 function Card (props) {
     return(
         <div className='Card'>
-            <p>I'm a card</p>
+            <p>(testing only) {props.treeName}</p>
+            <img className='overviewImg' src={props.treeImgs.overview}/>
         </div>
     )
 }
