@@ -10,8 +10,14 @@
     overflow: hidden;
 }
 
-.overviewImg {
+.imgsWrapper {
+    display: flex;
+    gap: .5rem;
+}
+
+.treeImg {
     height: 20vh;
-    border-radius: 6px;
-    max-width: 45vw;
+    width: 30vw;
+    object-fit: scale-down;
+    overflow: hidden;
 }

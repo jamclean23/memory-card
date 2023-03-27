@@ -19,5 +19,6 @@
     align-items: center;
     gap: 1rem;
     padding-inline: 5vw;
+    padding-top: 1rem;
     z-index: -2;
 }
