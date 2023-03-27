@@ -10,6 +10,7 @@ import { AppHeader } from './components/AppHeader/AppHeader.js';
 import { GameInfo } from './components/GameInfo/GameInfo.js';
 import './app.css'
 
+
 // ====== FUNCTIONS ======
 
 // Main app function 
