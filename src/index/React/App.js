@@ -4,7 +4,7 @@
 // ====== IMPORTS ======
 
 // React
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Card } from './components/Card/Card.js'
 import { AppHeader } from './components/AppHeader/AppHeader.js';
 import { GameInfo } from './components/GameInfo/GameInfo.js';
@@ -18,18 +18,25 @@ let treesImgs = getTrees();
 // Generate List of Cards from treesImg object
 let cards = generateCardsArray(treesImgs);
 
-console.log(cards);
 
 // ====== FUNCTIONS ======
 
 // Main app function 
 function App (props) {
+
+    // Mounting actions
+    useEffect(() => {
+        console.log('App Mounted');
+    });
+
     return (
         <div className='App'>
             <AppHeader />
             <GameInfo />
             <div className='cardsContainer'>
-            {cards}
+                <div className='scrollWrapper'>
+                    {cards}
+                </div>
             </div>
         </div>
     );
