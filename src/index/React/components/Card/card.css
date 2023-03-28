@@ -12,13 +12,125 @@
 }
 
 .imgsWrapper {
+    height: 100%;
+    width: 100%;
     display: flex;
     gap: .5rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .treeImg {
-    height: 20vh;
+    height: 100%;
+}
+
+.imgFrame {
+    height: 100%;
     width: 30vw;
-    object-fit: scale-down;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+    position: relative;
+}
+/* AMERICAN HORNBEAM */
+.americanhornbeam .needleLeafImg {
+    height: 80%;
+    transform: rotate(.25turn);
+}
+
+/* EASTERN HEMLOCK */
+.easternhemlock .needleLeafImg {
+    height: 70%;
+    transform: rotate(.25turn);
+}
+
+
+/* EASTER RED CEDAR */
+.easternredcedar .overviewImg {
+    height: 110%;
+}
+
+.easternredcedar .needleLeafImg {
+    height: 90%;
+    transform: rotate(.25turn);
+}
+
+/* FLOWERING DOGWOOD */
+.floweringdogwood .overviewImg {
+    height: 70%
+}
+
+.floweringdogwood .coneFruitImg {
+    position: absolute;
+    bottom: 3vh;
+    transform: rotate(-.25turn);
+}
+
+.floweringdogwood .needleLeafImg {
+    height: 80%;
+    transform: rotate(.25turn);
+}
+
+.floweringdogwood .imgFrame {
+    background-color: rgb(201, 217, 243);
+}
+
+/* FRASER FIR */
+.fraserfir .needleLeafImg {
+    height: 60%;
+}
+
+.fraserfir .needleLeafFrame {
+    background-color: rgb(23, 47, 18);
+}
+
+/* RIVER BIRCH */
+.rvrbirch .needleLeafImg {
+    height: 70%;
+    transform: rotate(-.25turn);
+}
+
+.rvrbirch .needleLeafFrame {
+    background-color: rgb(27, 40, 29);
+}
+
+/* TULIP TREE */
+.tuliptree .needleLeafImg {
+    height: 70%;
+    transform: rotate(.25turn);
+}
+
+.tuliptree .needleLeafFrame {
+    background-color: rgb(212, 231, 245);
+}
+
+/* WHITE PINE */
+.whitepine .needleLeafImg {
+    height: 75%;
+    transform: rotate(.25turn);
+}
+
+/* YELLOW BUCKEYE */
+.ylwbuckeye .coneFruitImg {
+    height: 80%;
+}
+
+.ylwbuckeye .imgFrame {
+    background-color: rgb(208, 211, 219);
+}
+
+/* SOUTHERN CATALPA */
+.southerncatalpa .overviewImg {
+    height: 60%;
+}
+
+.southerncatalpa .needleLeafImg {
+    height: 80%;
+    transform: rotate(-.25turn);
+}
+
+.southerncatalpa .imgFrame {
+    background-color: rgb(193, 237, 254);
 }

@@ -17,11 +17,34 @@ function getTrees () {
         
         // Get tree name from category name and assign to object
         trees[category].name = getTreeName(category);
+        trees[category].catName = category;
 
         function getTreeName(category) {
             switch(category) {
-                case '':
-                    break;
+                case 'americanhornbeam':
+                    return 'American Hornbeam';
+                case 'easternhemlock':
+                    return 'Eastern Hemlock';
+                case 'easternredcedar':
+                    return 'Eastern Red Cedar';
+                case 'floweringdogwood':
+                    return 'Flowering Dogwood';
+                case 'fraserfir':
+                    return 'Fraser Fir';
+                case 'northernredoak':
+                    return 'Northern Red Oak';
+                case 'redspruce':
+                    return 'Red Spruce';
+                case 'rvrbirch':
+                    return 'River Birch';
+                case 'tblmtnpine':
+                    return 'Table Mountain Pine';
+                case 'tuliptree':
+                    return 'Tulip Tree';
+                case 'whitepine':
+                    return 'White Pine';
+                case 'ylwbuckeye':
+                    return 'Yellow Buckeye';
                 default:
                     return 'Set tree name in "treeImageHandling.js"';
             }
