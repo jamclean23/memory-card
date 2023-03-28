@@ -134,3 +134,16 @@
 .southerncatalpa .imgFrame {
     background-color: rgb(193, 237, 254);
 }
+
+/* AMERICAN BASSWOOD */
+.americanbasswood .overviewImg {
+    transform: rotate(.25turn);
+}
+
+.americanbasswood .needleLeafImg {
+    height: 65%;
+}
+
+.americanbasswood .needleLeafFrame {
+    background-color: white;
+}

@@ -15,7 +15,7 @@ function Card (props) {
     // props.treeImgs.name
 
     return(
-        <div className={'Card ' + props.treeImgs.catName}>
+        <div className={'Card ' + props.treeImgs.catName} onClick={props.handleCardClick.bind(this, props.treeImgs.name)}>
             <div className='imgsWrapper'>
                 <div className='imgFrame overviewFrame'>
                     <img className='overviewImg treeImg' src={props.treeImgs.overview}/>

@@ -45,6 +45,8 @@ function getTrees () {
                     return 'White Pine';
                 case 'ylwbuckeye':
                     return 'Yellow Buckeye';
+                case 'americanbasswood':
+                    return 'American Basswood';
                 default:
                     return 'Set tree name in "treeImageHandling.js"';
             }
