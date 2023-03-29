@@ -2,8 +2,8 @@
 
 .Card {
     height: 30%;
-    width: 90vw;
-    box-shadow: 0 0 2px black;
+    width: calc(var(--doc-width) * .9);
+    box-shadow: 0 0 4px black;
     background-color: beige ;
     border-radius: 2px;
     padding: .25rem;
@@ -26,33 +26,35 @@
 
 .imgFrame {
     height: 100%;
-    width: 30vw;
+    width: 30%;
     border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
+    box-shadow: 0 0 4px 0 black;
 }
+
 /* AMERICAN HORNBEAM */
-.americanhornbeam .needleLeafImg {
+.americanhornbeam .needleLeafImg, .americanhornbeam.needleLeafImg {
     height: 80%;
     transform: rotate(.25turn);
 }
 
 /* EASTERN HEMLOCK */
-.easternhemlock .needleLeafImg {
+.easternhemlock .needleLeafImg, .easternhemlock.needleLeafImg {
     height: 70%;
     transform: rotate(.25turn);
 }
 
 
 /* EASTER RED CEDAR */
-.easternredcedar .overviewImg {
+.easternredcedar .overviewImg, .easternredcedar.overviewImg {
     height: 110%;
 }
 
-.easternredcedar .needleLeafImg {
+.easternredcedar .needleLeafImg, .easternredcedar.needleLeafImg {
     height: 90%;
     transform: rotate(.25turn);
 }
@@ -62,63 +64,79 @@
     height: 70%
 }
 
-.floweringdogwood .coneFruitImg {
+.floweringdogwood.overviewImg {
+    height: 30% !important;
+}
+
+.floweringdogwood .coneFruitImg, .floweringdogwood.coneFruitImg {
     position: absolute;
     bottom: 3vh;
     transform: rotate(-.25turn);
 }
 
-.floweringdogwood .needleLeafImg {
+.floweringdogwood .needleLeafImg, .floweringdogwood.needleLeafImg {
     height: 80%;
     transform: rotate(.25turn);
 }
 
-.floweringdogwood .imgFrame {
+.floweringdogwood .imgFrame, .floweringdogwood.imgFrame {
     background-color: rgb(201, 217, 243);
 }
 
 /* FRASER FIR */
-.fraserfir .needleLeafImg {
+.fraserfir .needleLeafImg, .fraserfir.needleLeafImg {
     height: 60%;
 }
 
-.fraserfir .needleLeafFrame {
+.fraserfir.overviewImg {
+    height: 30% !important;
+}
+
+.fraserfir .needleLeafFrame, .fraserfir.needleLeafFrame {
     background-color: rgb(23, 47, 18);
 }
 
 /* RIVER BIRCH */
-.rvrbirch .needleLeafImg {
+.rvrbirch .needleLeafImg, .rvrbirch.needleLeafImg {
     height: 70%;
     transform: rotate(-.25turn);
 }
 
-.rvrbirch .needleLeafFrame {
+.rvrbirch .needleLeafFrame,.rvrbirch.needleLeafFrame {
     background-color: rgb(27, 40, 29);
 }
 
 /* TULIP TREE */
-.tuliptree .needleLeafImg {
+.tuliptree .needleLeafImg, .tuliptree.needleLeafImg {
     height: 70%;
     transform: rotate(.25turn);
 }
 
-.tuliptree .needleLeafFrame {
+.tuliptree .needleLeafFrame, .tuliptree.needleLeafFrame {
     background-color: rgb(212, 231, 245);
 }
 
 /* WHITE PINE */
-.whitepine .needleLeafImg {
+.whitepine .needleLeafImg, .whitepine.needleLeafImg {
     height: 75%;
     transform: rotate(.25turn);
 }
 
+.whitepine.overviewImg {
+    height: 60% !important;
+}
+
 /* YELLOW BUCKEYE */
-.ylwbuckeye .coneFruitImg {
+.ylwbuckeye .coneFruitImg, .ylwbuckeye.coneFruitImg {
     height: 80%;
 }
 
-.ylwbuckeye .imgFrame {
+.ylwbuckeye .imgFrame, .ylwbuckeye.imgFrame {
     background-color: rgb(208, 211, 219);
+}
+
+.ylwbuckeye.overviewImg {
+    height: 50% !important;
 }
 
 /* SOUTHERN CATALPA */
@@ -126,32 +144,48 @@
     height: 60%;
 }
 
-.southerncatalpa .needleLeafImg {
+.southerncatalpa.overviewImg {
+    height: 50% !important;
+}
+
+.southerncatalpa .needleLeafImg, .southerncatalpa.needleLeafImg {
     height: 80%;
     transform: rotate(-.25turn);
 }
 
-.southerncatalpa .imgFrame {
+.southerncatalpa .imgFrame, .southerncatalpa.imgFrame {
     background-color: rgb(193, 237, 254);
 }
 
 /* AMERICAN BASSWOOD */
-.americanbasswood .overviewImg {
+.americanbasswood .overviewImg, .americanbasswood.overviewImg {
     transform: rotate(.25turn);
 }
 
-.americanbasswood .needleLeafImg {
+.americanbasswood .needleLeafImg, .americanbasswood.needleLeafImg {
     height: 65%;
 }
 
-.americanbasswood .needleLeafFrame {
+.americanbasswood .needleLeafFrame, .americanbasswood.needleLeafFrame {
     background-color: white;
 }
 
-@media (min-width: 1000px) {
-    .Card {
-        width: 340px;
-        height: 129px;
-        margin-bottom: 10px;
-    }
+/* RED SPRUCE */
+.redspruce.overviewImg {
+    height: 40% !important;
+    position: relative;
+    top: calc(var(--doc-height) * .1)
+}
+
+/* TABLE MOUNTAIN PINE */
+.tblmtnpine .overviewImg {
+    height: 80%;
+}
+
+.tblmtnpine.overviewImg {
+    height: 40% !important;
+}
+
+.tblmtnpine .imgFrame {
+    background-color: rgb(148, 228, 252);
 }

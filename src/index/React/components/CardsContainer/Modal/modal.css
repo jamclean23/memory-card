@@ -7,6 +7,20 @@
     left: 0;
     height: 100%;
     width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalImgWrapper {
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .cardsModal .xBtn {
@@ -19,4 +33,8 @@
     width: 5vh;
     border: none;
     background-color: transparent;
+}
+
+.cardsModal .overviewImg {
+    height: 70%;
 }

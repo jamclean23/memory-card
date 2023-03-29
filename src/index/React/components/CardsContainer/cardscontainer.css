@@ -1,8 +1,9 @@
 
 .cardsContainer {
     position: relative;
-    padding-inline: 5vw;
+    padding-inline: calc(var(--doc-width)*.06);
     padding-top: .5rem;
-    height: calc(var(--doc-height)*.84);
-    overflow: hidden;
+    --cards-container-height: calc(var(--doc-height)*.835);
+    height: var(--cards-container-height);
+    overflow: auto;
 }

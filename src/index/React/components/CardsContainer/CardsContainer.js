@@ -12,8 +12,8 @@ function CardsContainer (props) {
     const [modal, setModal] = useState('');
  
 
-    function handleCardClick (name) {
-        setModal(<Modal handleModalXClick={handleModalXClick}/>);
+    function handleCardClick (treeImg, catName, treeClass) {
+        setModal(<Modal treeImg={treeImg} catName={catName} treeClass={treeClass} handleModalXClick={handleModalXClick}/>);
     }
 
     function handleModalXClick () {
@@ -22,9 +22,10 @@ function CardsContainer (props) {
 
     return (
             <div className='cardsContainer'>
-                {cards[0]}
+                {/* {cards[0]}
                 {cards[1]}
-                {cards[2]}
+                {cards[2]} */}
+                {cards}
                 {modal}
             </div>
     )
