@@ -26,7 +26,7 @@
 
 .hero {
     font-family: pine;
-    font-size: 3rem;
+    font-size: 6vh;
     white-space: nowrap;
     grid-column: 2/3;
     justify-self: center;

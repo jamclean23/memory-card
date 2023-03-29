@@ -6,7 +6,7 @@
 }
 
 .App {
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 10fr;
 }
@@ -16,4 +16,12 @@
     padding-top: .5rem;
     height: 84vh;
     overflow-y: auto;
+}
+
+@media (min-width: 500px) {
+    .cardsContainer {
+        height: 420px;
+        width: 375px;
+        padding-inline: 10px;
+    }
 }

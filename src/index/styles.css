@@ -14,5 +14,11 @@ html {
     background-color: var(--main-background-color);
 }
 
+@media (min-width: 500px) {
+    body {
+        height: 667px;
+        width: 375px;
+    }
+}
 
 

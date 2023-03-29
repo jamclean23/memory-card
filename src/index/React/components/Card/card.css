@@ -147,3 +147,11 @@
 .americanbasswood .needleLeafFrame {
     background-color: white;
 }
+
+@media (min-width: 500px) {
+    .Card {
+        width: 340px;
+        height: 129px;
+        margin-bottom: 10px;
+    }
+}
