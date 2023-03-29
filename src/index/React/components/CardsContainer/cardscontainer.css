@@ -5,5 +5,5 @@
     padding-top: .5rem;
     --cards-container-height: calc(var(--doc-height)*.835);
     height: var(--cards-container-height);
-    overflow: auto;
+    overflow: hidden;
 }

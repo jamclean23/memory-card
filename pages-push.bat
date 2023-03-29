@@ -1,6 +1,7 @@
-IF "%1"=="" (
+IF %1 =="" (
     set comment="GH-Pages Push"
-) ELSE (
+) 
+ (
     set comment=%1
 )
 

@@ -22,10 +22,10 @@ function CardsContainer (props) {
 
     return (
             <div className='cardsContainer'>
-                {/* {cards[0]}
+                {cards[0]}
                 {cards[1]}
-                {cards[2]} */}
-                {cards}
+                {cards[2]}
+                {/* {cards} */}
                 {modal}
             </div>
     )
