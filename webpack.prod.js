@@ -30,12 +30,12 @@ module.exports = merge(common, {
     // Additional plugins may be concatted to the end of the array or placed in the original array
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "[name]/[name]-[contenthash].css",
+            filename: "[name]-[contenthash].css",
         }),
     ].concat(pages.map((page, index) => {
         return new HtmlWebpackPlugin({
             template: './src/' + page + '/' + page + '.html',
-            filename: page + '/' + (index === 0 ? 'index' : page)  + '.html',
+            filename: page + '.html',
             inject: true,
             chunks: [page],
             minify: {
