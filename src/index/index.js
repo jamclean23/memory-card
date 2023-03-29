@@ -13,7 +13,14 @@ import { createRoot } from 'react-dom/client';
 // Main React App
 import { App } from './React/App.js';
 
-// const testImport = require.context('./assets/trees/', true, /.jpg$/);
+// ====== WINDOW DETECTION ======
+
+function documentHeight () {
+    const doc = document.documentElement;
+    doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
+}
+
+documentHeight();
 
 // ====== RENDER ======
 

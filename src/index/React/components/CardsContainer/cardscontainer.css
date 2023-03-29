@@ -3,7 +3,7 @@
     position: relative;
     padding-inline: 5vw;
     padding-top: .5rem;
-    height: 84vh;
+    height: calc(var(--doc-height)*.84);
     overflow: hidden;
 }
 

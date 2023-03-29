@@ -20,7 +20,7 @@ function AppHeader (props) {
 
     return(
         <div className='AppHeader'>
-            <h1 className='hero'>ID That Tree!</h1>
+            <h1 className='hero'>ID That Tree!!</h1>
             <img className='hamburger' src={hamburger} alt='menu' onClick={handleMenuClick}/>
         </div>
     );

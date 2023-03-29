@@ -22,10 +22,10 @@ function CardsContainer (props) {
 
     return (
             <div className='cardsContainer'>
-                <div className='scrollWrapper'>
-                    {cards}
-                    {modal}
-                </div>
+                {cards[0]}
+                {cards[1]}
+                {cards[2]}
+                {modal}
             </div>
     )
 }

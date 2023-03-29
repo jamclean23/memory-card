@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    height: 100%;
+    height: calc(var(--doc-height) * .08);
 }
 
 .findTreeContainer {
