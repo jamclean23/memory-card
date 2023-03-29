@@ -6,11 +6,3 @@
     height: calc(var(--doc-height)*.84);
     overflow: hidden;
 }
-
-@media (min-width: 1000px) {
-    .cardsContainer {
-        height: 420px;
-        width: 375px;
-        padding-inline: 10px;
-    }
-}

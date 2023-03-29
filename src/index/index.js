@@ -20,7 +20,21 @@ function documentHeight () {
     doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
 }
 
-documentHeight();
+function documentWidth () {
+    const doc = document.documentElement;
+    doc.style.setProperty('--doc-width', `${window.innerWidth}px`);
+}
+
+function updateWindow() {
+    documentHeight();
+    documentWidth();
+}
+
+updateWindow();
+
+// Event Listeners
+
+window.addEventListener('resize', updateWindow);
 
 // ====== RENDER ======
 

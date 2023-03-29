@@ -8,7 +8,7 @@
     --header-background-color: #ABC4A1;
     --main-background-color: #9DB4AB;
     --card-background-color: white;
-    --doc-height: 100%;
+    /* --doc-height: 100%; */
 }
 
 body {
@@ -19,12 +19,4 @@ body {
 html {
     background-color: var(--main-background-color);
 }
-
-@media (min-width: 500px) {
-    body {
-        height: 667px;
-        width: 375px;
-    }
-}
-
 

@@ -17,7 +17,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
     align-items: center;
-    align-content: start;
     padding-inline: .4rem;
     height: calc(var(--doc-height) * .08);
 }
@@ -26,10 +25,11 @@
 
 .hero {
     font-family: pine;
-    font-size: 6vh;
+    font-size: calc(var(--doc-height) * .06);
     white-space: nowrap;
     grid-column: 2/3;
     justify-self: center;
+    align-self: center;
 }
 
 .hamburger {
