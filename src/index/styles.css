@@ -10,6 +10,10 @@
     --card-background-color: white;
 }
 
+body {
+    overflow: hidden;
+}
+
 html {
     background-color: var(--main-background-color);
 }

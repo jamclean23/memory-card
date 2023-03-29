@@ -1,0 +1,22 @@
+
+.cardsModal {
+    --modalbg: rgba(0, 0, 0, .85);
+    background-color: var(--modalbg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.cardsModal .xBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-image: url('./assets/xBtn.png');
+    background-size: 100% 100%;
+    height: 5vh;
+    width: 5vh;
+    border: none;
+    background-color: transparent;
+}

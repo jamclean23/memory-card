@@ -1,0 +1,16 @@
+
+.cardsContainer {
+    position: relative;
+    padding-inline: 5vw;
+    padding-top: .5rem;
+    height: 84vh;
+    overflow: hidden;
+}
+
+@media (min-width: 1000px) {
+    .cardsContainer {
+        height: 420px;
+        width: 375px;
+        padding-inline: 10px;
+    }
+}

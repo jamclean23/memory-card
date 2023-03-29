@@ -1,6 +1,6 @@
 // Module for generating list of cards
 import React from 'react';
-import { Card } from '../Card/Card';
+import { Card } from './Card/Card';
 import uniqid from 'uniqid';
 
 function generateCardsArray(treesImgs, handleCardClick) {
