@@ -20,5 +20,7 @@
 
 .findTreeContainer {
     grid-column: 2/3;
-    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }

@@ -16,8 +16,7 @@ function GameInfo (props) {
     return (
         <div className='GameInfo'>
             <div className='findTreeContainer'>
-                <p>↓ Find this tree ↓</p>
-                <p>{props.targetTree}</p>
+                <p>Swipe right on the {props.targetTree} →</p>
             </div>
         </div>
     );
