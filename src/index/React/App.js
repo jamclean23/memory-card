@@ -21,8 +21,8 @@ function App (props) {
 
     // Mounting actions
     useEffect(() => {
-        console.log('App Mounted');
-    });
+        console.log('App Mount Event');
+    }, []);
 
     return (
         <div className='App'>

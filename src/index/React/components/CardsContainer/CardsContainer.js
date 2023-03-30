@@ -13,6 +13,8 @@ function CardsContainer (props) {
     const [cardsToDisplay, setCardsToDisplay] = useState([]);
     const [correctCard, setCorrectCard] = useState('');
     const [modal, setModal] = useState('');
+    const [selection, setSelection] = useState('');
+
     
     // On Mount
     useEffect(() => {
@@ -27,10 +29,33 @@ function CardsContainer (props) {
         }
     }, [correctCard]);
 
+    // On selection change
+    useEffect(() => {
+        console.log('selection made');
+        if (selection) {
+            if (isSelectionCorrect(correctCard.key, reactKeyFromElement(selection))) {
+                console.log('Correct!');
+                setSelection('');
+                newTurn();
+            } else {
+                console.log('Incorrect!')
+                setSelection('');
+            };
+        }
+    }, [selection]);
+
     // on cardsToDisplayChange
     useEffect(() => {
         // console.log(cardsToDisplay);
     }, [cardsToDisplay]);
+
+    function isSelectionCorrect (correctKey, chosenKey) {
+        if (correctKey === chosenKey){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     function newTurn (lastCard) {
         let currentCards = ongoingCards;
@@ -42,14 +67,14 @@ function CardsContainer (props) {
         setOngoingCards(currentCards);
 
         // Determine new correct card and set message
-        let correctCard = currentCards[getRandomIndex(currentCards)];
-        props.setTargetTree(correctCard.props.treeImgs.name);
-        setCorrectCard(correctCard);
+        let currentCorrectCard = currentCards[getRandomIndex(currentCards)];
+        props.setTargetTree(currentCorrectCard.props.treeImgs.name);
+        setCorrectCard(currentCorrectCard);
 
         // Generate card choices
-        let cardChoices = [correctCard];
+        let cardChoices = [currentCorrectCard];
         let choicesLeft = currentCards;
-        choicesLeft = removeCardFromArray(correctCard, choicesLeft);
+        choicesLeft = removeCardFromArray(currentCorrectCard, choicesLeft);
 
         // Wrong choices
         for (let i = 1; i < 3; i++) {
@@ -125,9 +150,9 @@ function CardsContainer (props) {
         
         // If card position is in the desired range, register a confirm
         let cardPosition = getComputedStyle(card).left.split('px')[0];
-        console.log(cardPosition);
         if (cardPosition > 100) {
-            console.log('confirm');
+            // Check for correct selection
+            setSelection(card);
         }
 
         // Reset Card position
@@ -142,6 +167,14 @@ function CardsContainer (props) {
             return getCardFromTarget(target.parentElement);
         }
     }    
+
+    function reactKeyFromElement (element) {
+        const key = Object.keys(element).find( (key) => {
+            return key.startsWith('__reactFiber');
+        });
+
+        return element[key].return.key;
+    }   
 
     return (
             <div className='cardsContainer'>
