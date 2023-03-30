@@ -70,10 +70,15 @@
     height: 30% !important;
 }
 
-.floweringdogwood .coneFruitImg, .floweringdogwood.coneFruitImg {
-    position: absolute;
-    bottom: 3vh;
+.floweringdogwood .coneFruitImg {
+    position: relative;
+    bottom: calc(var(--doc-width) * .06);
     transform: rotate(-.25turn);
+}
+
+.floweringdogwood.coneFruitImg {
+    position: relative;
+    transform: translate(calc(var(--doc-width) * .05), calc(var(--doc-height) * -.2)) rotate(-.25turn);
 }
 
 .floweringdogwood .needleLeafImg, .floweringdogwood.needleLeafImg {
