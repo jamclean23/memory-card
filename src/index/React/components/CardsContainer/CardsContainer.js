@@ -8,7 +8,7 @@ import './cardscontainer.css';
 
 function CardsContainer (props) {
     const [treesImgs, setTreesImgs] = useState(getTrees());
-    const [cards, setCards] = useState(generateCardsArray(treesImgs, handleCardClick));
+    const [cards, setCards] = useState(generateCardsArray(treesImgs, handleCardClick, handleRightSwipe, handleSwiping, handleUp));
     const [ongoingCards, setOngoingCards] = useState(cards);
     const [cardsToDisplay, setCardsToDisplay] = useState([]);
     const [correctCard, setCorrectCard] = useState('');
@@ -101,6 +101,30 @@ function CardsContainer (props) {
     function handleModalXClick () {
         setModal('');
     }
+
+    function handleRightSwipe () {
+        console.log('swiped right');
+    }
+
+    function handleSwiping (event) {
+        const card = getCardFromTarget(event.event.target);
+        card.style.left = event.deltaX + 'px';
+
+    }
+
+    function handleUp (event) {
+        const card = getCardFromTarget(event.event.target);
+        card.style.left = '0px';
+        console.log('up');
+    }
+
+    function getCardFromTarget (target) {
+        if (target.classList.contains('Card')) {
+            return target;
+        } else {
+            return getCardFromTarget(target.parentElement);
+        }
+    }    
 
     return (
             <div className='cardsContainer'>

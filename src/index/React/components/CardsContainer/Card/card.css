@@ -9,6 +9,7 @@
     padding: .25rem;
     overflow: hidden;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .imgsWrapper {
