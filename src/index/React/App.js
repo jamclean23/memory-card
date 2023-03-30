@@ -4,7 +4,7 @@
 // ====== IMPORTS ======
 
 // React
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AppHeader } from './components/AppHeader/AppHeader.js';
 import { GameInfo } from './components/GameInfo/GameInfo.js';
 import { CardsContainer } from './components/CardsContainer/CardsContainer.js';
@@ -17,6 +17,8 @@ import './app.css';
 // Main app function 
 function App (props) {
 
+    const [targetTree, setTargetTree] = useState();
+
     // Mounting actions
     useEffect(() => {
         console.log('App Mounted');
@@ -25,8 +27,8 @@ function App (props) {
     return (
         <div className='App'>
             <AppHeader />
-            <GameInfo />
-            <CardsContainer />
+            <GameInfo targetTree={targetTree}/>
+            <CardsContainer setTargetTree={setTargetTree}/>
         </div>
     );
 }

@@ -17,7 +17,7 @@ function GameInfo (props) {
         <div className='GameInfo'>
             <div className='findTreeContainer'>
                 <p>↓ Find this tree ↓</p>
-                <p>Easter Red Cedar</p>
+                <p>{props.targetTree}</p>
             </div>
         </div>
     );

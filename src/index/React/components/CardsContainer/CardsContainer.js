@@ -41,8 +41,9 @@ function CardsContainer (props) {
         }
         setOngoingCards(currentCards);
 
-        // Determine new correct card
+        // Determine new correct card and set message
         let correctCard = currentCards[getRandomIndex(currentCards)];
+        props.setTargetTree(correctCard.props.treeImgs.name);
         setCorrectCard(correctCard);
 
         // Generate card choices
