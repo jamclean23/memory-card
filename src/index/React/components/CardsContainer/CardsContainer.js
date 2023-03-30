@@ -103,19 +103,36 @@ function CardsContainer (props) {
     }
 
     function handleRightSwipe () {
-        console.log('swiped right');
     }
 
     function handleSwiping (event) {
         const card = getCardFromTarget(event.event.target);
-        card.style.left = event.deltaX + 'px';
 
+        // Move card with swipe
+        if (event.deltaX > 0) {
+            card.style.left = event.deltaX + 'px';
+        }
+
+        if (event.deltaX > 100) {
+            card.style.backgroundColor = 'green';
+        } else {
+            card.style.backgroundColor = 'white';
+        }
     }
 
     function handleUp (event) {
         const card = getCardFromTarget(event.event.target);
+        
+        // If card position is in the desired range, register a confirm
+        let cardPosition = getComputedStyle(card).left.split('px')[0];
+        console.log(cardPosition);
+        if (cardPosition > 100) {
+            console.log('confirm');
+        }
+
+        // Reset Card position
         card.style.left = '0px';
-        console.log('up');
+        card.style.backgroundColor = 'white';
     }
 
     function getCardFromTarget (target) {
