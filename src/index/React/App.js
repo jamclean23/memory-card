@@ -9,7 +9,7 @@ import { AppHeader } from './components/AppHeader/AppHeader.js';
 import { GameInfo } from './components/GameInfo/GameInfo.js';
 import { CardsContainer } from './components/CardsContainer/CardsContainer.js';
 import './app.css';
-
+import uniqid from 'uniqid';
 
 
 // ====== FUNCTIONS ======
@@ -18,16 +18,21 @@ import './app.css';
 function App (props) {
 
     const [targetTree, setTargetTree] = useState();
+    const [gameKey, setGameKey] = useState(uniqid());
 
     // Mounting actions
     useEffect(() => {
     }, []);
 
+    function resetGame () {
+        setGameKey(uniqid());
+    }
+
     return (
         <div className='App'>
             <AppHeader />
             <GameInfo targetTree={targetTree}/>
-            <CardsContainer setTargetTree={setTargetTree}/>
+            <CardsContainer key={gameKey} setTargetTree={setTargetTree} resetGame={resetGame}/>
         </div>
     );
 }

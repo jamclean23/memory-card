@@ -1,0 +1,23 @@
+.selectionResultSplash {
+    height: 90%;
+    width: calc(var(--doc-width) * .9);
+    box-shadow: 0 0 4px black;
+    background-color: beige ;
+    border-radius: 2px;
+    padding: .25rem;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.Card {
+    height: 30%;
+    width: calc(var(--doc-width) * .9);
+    box-shadow: 0 0 4px black;
+    background-color: beige ;
+    border-radius: 2px;
+    padding: .25rem;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}

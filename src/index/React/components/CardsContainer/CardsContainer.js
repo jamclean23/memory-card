@@ -1,6 +1,7 @@
 // Container for card components
 
 import React, { useEffect, useState } from 'react';
+import { SelectionResultSplash } from './SelectionResultSplash/SelectionResultSplash.js';
 import { EndCard } from './EndCard/EndCard.js';
 import { getTrees } from '../../../treeImageHandling.js';
 import { generateCardsArray } from './generateCards.js';
@@ -19,6 +20,13 @@ function CardsContainer (props) {
     const [complete, setComplete] = useState(false);
     const [content, setContent] = useState('');
     
+    const cardsContent = (<>
+                        {cardsToDisplay[0]}
+                        {cardsToDisplay[1]}
+                        {cardsToDisplay[2]}
+                        {/* {cards} */}
+                        {modal}
+                        </>);
     // On Mount
     useEffect(() => {
         newTurn();
@@ -28,15 +36,14 @@ function CardsContainer (props) {
     // On selection change
     useEffect(() => {
         if (selection) {
+            console.log(cardFromReactKey(reactKeyFromElement(selection)));
             if (isSelectionCorrect(correctCard.key, reactKeyFromElement(selection))) {
-                console.log('Correct!');
                 setRightAnswers(() => {return rightAnswers + 1});
                 setSelection('');
-                newTurn();
+                selectionResultSplash('correct');
             } else {
-                console.log('Incorrect!')
                 setSelection('');
-                newTurn();
+                selectionResultSplash('incorrect');
             };
         }
     }, [selection]);
@@ -44,17 +51,10 @@ function CardsContainer (props) {
     // On complete change
     useEffect(() => {
 
-        if (!complete) {
-            setContent(                
-                    <>
-                        {cardsToDisplay[0]}
-                        {cardsToDisplay[1]}
-                        {cardsToDisplay[2]}
-                        {/* {cards} */}
-                        {modal}
-                    </>);
+        if (complete) {
+            setContent(<EndCard resetGame={props.resetGame} rightAnswers={rightAnswers} length={cards.length}/>);
         } else {
-            setContent(<EndCard rightAnswers={rightAnswers} length={cards.length}/>);
+            setContent(cardsContent);
         }
     }, [complete, cardsToDisplay, modal]);
 
@@ -66,7 +66,14 @@ function CardsContainer (props) {
         }
     }
 
-    function newTurn (mode) {
+    function selectionResultSplash (result) {
+        setContent(<SelectionResultSplash newTurn={newTurn} result={result} correctCard={correctCard} selection={selection}/>);
+    }
+
+    function newTurn () {
+
+        setContent(cardsContent);
+
         if (ongoingCards.length > 0) {
 
             // Determine new correct card and set message
@@ -192,6 +199,13 @@ function CardsContainer (props) {
         return element[key].return.key;
     }   
 
+    function cardFromReactKey (key) {
+        let result = cards.find((card) => {
+            return card.key === key;
+        });
+
+        return result || 'not found';
+    }
 
     return (
             <div className='cardsContainer'>
