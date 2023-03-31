@@ -8,7 +8,6 @@ function Modal (props) {
     const imgElement = <img className={'imgZoomed ' + props.catName + ' ' + props.treeClass} alt='Overview Img' src={props.treeImg}/>;
 
     useEffect(() => {
-        console.log(props.treeImg);
         setCurrentImg(imgElement);
     }, []);
 

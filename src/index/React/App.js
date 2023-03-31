@@ -21,7 +21,6 @@ function App (props) {
 
     // Mounting actions
     useEffect(() => {
-        console.log('App Mount Event');
     }, []);
 
     return (

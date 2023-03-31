@@ -1,6 +1,7 @@
 // Container for card components
 
 import React, { useEffect, useState } from 'react';
+import { EndCard } from './EndCard/EndCard.js';
 import { getTrees } from '../../../treeImageHandling.js';
 import { generateCardsArray } from './generateCards.js';
 import { Modal } from './Modal/Modal.js';
@@ -14,40 +15,48 @@ function CardsContainer (props) {
     const [correctCard, setCorrectCard] = useState('');
     const [modal, setModal] = useState('');
     const [selection, setSelection] = useState('');
-
+    const [rightAnswers, setRightAnswers] = useState(0);
+    const [complete, setComplete] = useState(false);
+    const [content, setContent] = useState('');
     
     // On Mount
     useEffect(() => {
         newTurn();
     }, []);
 
-    // On correctCard change
-    useEffect(() => {
-        if (correctCard) {
-            console.log('\nCorrect Card:');
-            console.log(correctCard.props.treeImgs.name);
-        }
-    }, [correctCard]);
 
     // On selection change
     useEffect(() => {
-        console.log('selection made');
         if (selection) {
             if (isSelectionCorrect(correctCard.key, reactKeyFromElement(selection))) {
                 console.log('Correct!');
+                setRightAnswers(() => {return rightAnswers + 1});
                 setSelection('');
                 newTurn();
             } else {
                 console.log('Incorrect!')
                 setSelection('');
+                newTurn();
             };
         }
     }, [selection]);
 
-    // on cardsToDisplayChange
+    // On complete change
     useEffect(() => {
-        // console.log(cardsToDisplay);
-    }, [cardsToDisplay]);
+
+        if (!complete) {
+            setContent(                
+                    <>
+                        {cardsToDisplay[0]}
+                        {cardsToDisplay[1]}
+                        {cardsToDisplay[2]}
+                        {/* {cards} */}
+                        {modal}
+                    </>);
+        } else {
+            setContent(<EndCard rightAnswers={rightAnswers} length={cards.length}/>);
+        }
+    }, [complete, cardsToDisplay, modal]);
 
     function isSelectionCorrect (correctKey, chosenKey) {
         if (correctKey === chosenKey){
@@ -57,65 +66,72 @@ function CardsContainer (props) {
         }
     }
 
-    function newTurn (lastCard) {
-        let currentCards = ongoingCards;
+    function newTurn (mode) {
+        if (ongoingCards.length > 0) {
 
-        // If there was a correct card chosen the last round, remove it from the list
-        if (lastCard) {
-            currentCards = removeCardFromArray(lastCard, currentCards);
-        }
-        setOngoingCards(currentCards);
+            // Determine new correct card and set message
+            let currentCards = ongoingCards;
+            let currentCorrectCard = currentCards[getRandomIndex(currentCards)];
+            props.setTargetTree(currentCorrectCard.props.treeImgs.name);
+            setCorrectCard(currentCorrectCard);
 
-        // Determine new correct card and set message
-        let currentCorrectCard = currentCards[getRandomIndex(currentCards)];
-        props.setTargetTree(currentCorrectCard.props.treeImgs.name);
-        setCorrectCard(currentCorrectCard);
-
-        // Generate card choices
-        let cardChoices = [currentCorrectCard];
-        let choicesLeft = currentCards;
-        choicesLeft = removeCardFromArray(currentCorrectCard, choicesLeft);
-
-        // Wrong choices
-        for (let i = 1; i < 3; i++) {
-            let wrongChoiceIndex = getRandomIndex(choicesLeft);
-            cardChoices.push(choicesLeft[wrongChoiceIndex]);
-            choicesLeft = removeCardFromArray(choicesLeft[wrongChoiceIndex], choicesLeft);
-        }
-
-        cardChoices = shuffleArray(cardChoices);
-        setCardsToDisplay(cardChoices);
-
-        function shuffleArray (array) {
-            let resultArray = [];
-
-            let possibleIndexes = [];
-
-            for (let i = 0; i < array.length; i++) {
-                possibleIndexes.push(i);
+            // Remove correct card from current cards, and update to ongoingCards
+            currentCards = removeCardFromArray(currentCorrectCard, currentCards);
+            
+            // If there are no more choices for a correct card, mark the game as completed
+            if (!currentCards) {
+                setComplete(true);
             }
 
-            array.forEach((element) => {
-                let possibleIndexesRandomIndex = getRandomIndex(possibleIndexes);
-                let randomIndex = possibleIndexes[possibleIndexesRandomIndex];
-                resultArray[randomIndex] = element;
-                possibleIndexes.splice(possibleIndexesRandomIndex, 1);
-            });
+            setOngoingCards(currentCards);
 
-            return resultArray;
-        }
+            // Generate card choices
+            let cardChoices = [currentCorrectCard];
+            let choicesLeft = removeCardFromArray(currentCorrectCard, cards);
 
-        function getRandomIndex (array) {
-            let result =  Math.floor(Math.random() * (array.length));
-            return result;
-        }
+            // Wrong choices
+            for (let i = 1; i < 3; i++) {
+                let wrongChoiceIndex = getRandomIndex(choicesLeft);
+                cardChoices.push(choicesLeft[wrongChoiceIndex]);
+                choicesLeft = removeCardFromArray(choicesLeft[wrongChoiceIndex], choicesLeft);
+            }
 
-        function removeCardFromArray (cardToBeRemoved, array) {
-            let result = array.filter((currentCard) => {
-                return !( currentCard === cardToBeRemoved);
-            });
+            cardChoices = shuffleArray(cardChoices);
+            setCardsToDisplay(cardChoices);
 
-            return result;
+            function shuffleArray (array) {
+                let resultArray = [];
+
+                let possibleIndexes = [];
+
+                for (let i = 0; i < array.length; i++) {
+                    possibleIndexes.push(i);
+                }
+
+                array.forEach((element) => {
+                    let possibleIndexesRandomIndex = getRandomIndex(possibleIndexes);
+                    let randomIndex = possibleIndexes[possibleIndexesRandomIndex];
+                    resultArray[randomIndex] = element;
+                    possibleIndexes.splice(possibleIndexesRandomIndex, 1);
+                });
+
+                return resultArray;
+            }
+
+            function getRandomIndex (array) {
+                let result =  Math.floor(Math.random() * (array.length));
+                return result;
+            }
+
+            function removeCardFromArray (cardToBeRemoved, array) {
+                let result = array.filter((currentCard) => {
+                    return !( currentCard === cardToBeRemoved);
+                });
+
+                return result;
+            }
+        } else {
+            setComplete(true);
         }
     }
 
@@ -176,13 +192,10 @@ function CardsContainer (props) {
         return element[key].return.key;
     }   
 
+
     return (
             <div className='cardsContainer'>
-                {cardsToDisplay[0]}
-                {cardsToDisplay[1]}
-                {cardsToDisplay[2]}
-                {/* {cards} */}
-                {modal}
+                {content}
             </div>
     )
 }
