@@ -187,7 +187,7 @@ function CardsContainer (props) {
 
         // Reset Card position
         card.style.left = '0px';
-        card.style.backgroundColor = 'white';
+        card.style.backgroundColor = 'beige';
     }
 
     function getCardFromTarget (target) {
