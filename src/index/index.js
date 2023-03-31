@@ -13,7 +13,13 @@ import { createRoot } from 'react-dom/client';
 // Main React App
 import { App } from './React/App.js';
 
-// ====== WINDOW DETECTION ======
+// ====== WINDOW ======
+
+window.oncontextmenu = function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    return false;
+};
 
 function documentHeight () {
     const doc = document.documentElement;
