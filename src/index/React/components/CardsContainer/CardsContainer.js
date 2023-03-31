@@ -171,7 +171,7 @@ function CardsContainer (props) {
         if (event.deltaX > 100) {
             card.style.backgroundColor = 'green';
         } else {
-            card.style.backgroundColor = 'white';
+            card.style.backgroundColor = 'beige';
         }
     }
 
