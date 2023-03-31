@@ -36,7 +36,6 @@ function CardsContainer (props) {
     // On selection change
     useEffect(() => {
         if (selection) {
-            console.log(cardFromReactKey(reactKeyFromElement(selection)));
             if (isSelectionCorrect(correctCard.key, reactKeyFromElement(selection))) {
                 setRightAnswers(() => {return rightAnswers + 1});
                 setSelection('');
@@ -67,7 +66,7 @@ function CardsContainer (props) {
     }
 
     function selectionResultSplash (result) {
-        setContent(<SelectionResultSplash newTurn={newTurn} result={result} correctCard={correctCard} selection={selection}/>);
+        setContent(<SelectionResultSplash newTurn={newTurn} result={result} correctCard={correctCard} selection={cardFromReactKey(reactKeyFromElement(selection))}/>);
     }
 
     function newTurn () {
