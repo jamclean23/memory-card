@@ -4,7 +4,7 @@
 // IMPORTS
 // ############################
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './game-info.css';
 
 // ############################
@@ -13,10 +13,31 @@ import './game-info.css';
 
 function GameInfo (props) {
 
+    const [message, setMessage] = useState();
+
+    useEffect(() => {
+
+        if (props.targetTree === 'Oops!') {
+            setMessage(props.targetTree);
+            document.querySelector('.findTreeContainer').classList.add('incorrect');
+        } else if (props.targetTree === 'Correct!') {
+            setMessage(props.targetTree);
+            document.querySelector('.findTreeContainer').classList.add('correct');
+        } else if (props.targetTree === 'Congrats!') {
+            setMessage(props.targetTree);
+            document.querySelector('.findTreeContainer').classList = 'findTreeContainer';
+        } else {
+            setMessage('Swipe right on this tree: ' + props.targetTree + ' →');
+            document.querySelector('.findTreeContainer').classList = 'findTreeContainer';
+        }
+    }, [props.targetTree]);
+
+
     return (
         <div className='GameInfo'>
+            <p className='slidesCounter'>{props.slideNumber}/{props.totalSlides}</p>
             <div className='findTreeContainer'>
-                <p>Swipe right on the {props.targetTree} →</p>
+                <p className='GameInfoMessage'>{message}</p>
             </div>
         </div>
     );

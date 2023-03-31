@@ -18,6 +18,8 @@ import uniqid from 'uniqid';
 function App (props) {
 
     const [targetTree, setTargetTree] = useState();
+    const [slideNumber, setSlideNumber] = useState(0);
+    const [totalSlides, setTotalSlides] = useState(0);
     const [gameKey, setGameKey] = useState(uniqid());
 
     // Mounting actions
@@ -25,14 +27,15 @@ function App (props) {
     }, []);
 
     function resetGame () {
+        setSlideNumber(0);
         setGameKey(uniqid());
     }
 
     return (
         <div className='App'>
             <AppHeader />
-            <GameInfo targetTree={targetTree}/>
-            <CardsContainer key={gameKey} setTargetTree={setTargetTree} resetGame={resetGame}/>
+            <GameInfo totalSlides={totalSlides} slideNumber={slideNumber} targetTree={targetTree}/>
+            <CardsContainer setTotalSlides={setTotalSlides} setSlideNumber={setSlideNumber} slideNumber={slideNumber} key={gameKey} setTargetTree={setTargetTree} resetGame={resetGame}/>
         </div>
     );
 }

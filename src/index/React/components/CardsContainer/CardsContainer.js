@@ -32,6 +32,10 @@ function CardsContainer (props) {
         newTurn();
     }, []);
 
+    // On settings total cards
+    useEffect(() => {
+        props.setTotalSlides(cards.length);
+    }, [cards]);
 
     // On selection change
     useEffect(() => {
@@ -39,9 +43,11 @@ function CardsContainer (props) {
             if (isSelectionCorrect(correctCard.key, reactKeyFromElement(selection))) {
                 setRightAnswers(() => {return rightAnswers + 1});
                 setSelection('');
+                props.setTargetTree('Correct!');
                 selectionResultSplash('correct');
             } else {
                 setSelection('');
+                props.setTargetTree('Oops!');
                 selectionResultSplash('incorrect');
             };
         }
@@ -51,6 +57,8 @@ function CardsContainer (props) {
     useEffect(() => {
 
         if (complete) {
+            props.setTargetTree('Congrats!');
+            props.setSlideNumber(cards.length);
             setContent(<EndCard resetGame={props.resetGame} rightAnswers={rightAnswers} length={cards.length}/>);
         } else {
             setContent(cardsContent);
@@ -70,7 +78,7 @@ function CardsContainer (props) {
     }
 
     function newTurn () {
-
+        props.setSlideNumber(() => { return props.slideNumber + 1 });
         setContent(cardsContent);
 
         if (ongoingCards.length > 0) {

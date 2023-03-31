@@ -2,10 +2,19 @@
     height: 90%;
     width: calc(var(--doc-width) * .9);
     box-shadow: 0 0 4px black;
-    background-color: beige ;
+    background-color: white ;
     border-radius: 2px;
     padding: .25rem;
     overflow: hidden;
     margin-bottom: 10px;
     position: relative;
+}
+
+.EndCard button {
+    position: fixed;
+    bottom: .25rem;
+    right: .25rem;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    border-radius: 6px;
 }

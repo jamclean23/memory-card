@@ -24,3 +24,27 @@
     align-items: center;
     justify-content: center;
 }
+
+.findTreeContainer.correct, .findTreeContainer.incorrect {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.findTreeContainer.correct {
+    color: green;
+}
+
+.findTreeContainer.incorrect {
+    color: red;
+}
+
+.slidesCounter {
+    position: fixed;
+    bottom: .25rem;
+    left: .25rem;
+    background-color: white;
+    padding: .05rem .125rem;
+    border-radius: 2px;
+    box-shadow: 0 0 2px 0 black;;
+
+}
