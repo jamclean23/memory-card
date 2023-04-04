@@ -1,7 +1,7 @@
-- Add attributions menu page
+- Add attributions menu page  
 
-- Add donate menu page 
+- Add donate menu page  
 
-- Add hella trees
+- Add hella trees  
 
-- Lazy loading
+- Lazy loading  

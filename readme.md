@@ -1,5 +1,9 @@
-This project is modified from the multiple page webpack setup and configured for a single page.  
-Folder built into dist needs to be designated in webpack.variables.js  
-Src/App main html and js to be injected need to have the same name as the folder 
-
-This project will be further modified to accomodate the building of react apps within a webpack setup.  
+<h1>Id That Tree!!</h1>
+<h3>Overview</h3>
+<p>This is a flash card game for learning about the trees of North Carolina.</p>
+<p>It is an assignment for the Odin Project.</p>
+<ul>Learning Objectives:
+<li>Develop familiarity with React</li>
+<li>Develop familiarity with React's Functional Components (vs. Class Components)</li>
+<li>Learn use cases for the UseEffect hook</li>
+</ul>
