@@ -39,35 +39,36 @@ Red Spruce
     - Leaf: https://pixnio.com/flora-plants/trees/conifer-spruce-trees-pictures/red-spruce-sprouts-leaves#
 
 River Birch
-    - Overview: https://www.flickr.com/photos/fairfaxcounty/16775866715/
-    - Fruit: https://www.flickr.com/photos/138014579@N08/23420494494
-    - Leaf: https://www.flickr.com/photos/jsjgeology/27880297709
+- Overview: https://www.flickr.com/photos/fairfaxcounty/16775866715/
+- Fruit: https://www.flickr.com/photos/138014579@N08/23420494494
+- Leaf: https://www.flickr.com/photos/jsjgeology/27880297709
 
 Table mountain Pine
-    - Overview: Bruce Marlin - Own work: http://www.cirrusimage.com/tree_table_mountain_pine.htm
-    - Cone: Bruce Marlin - Own work: http://www.cirrusimage.com/tree_table_mountain_pine.htm
-    - Needle: Chris Evans, University of Illinois, Bugwood.org,  https://www.invasive.org/browse/detail.cfm?imgnum=1342085
+- Overview: http://www.cirrusimage.com/tree_table_mountain_pine.htm
+- Cone: http://www.cirrusimage.com/tree_table_mountain_pine.htm
+- Needle: https://www.invasive.org/browse/detail.cfm?imgnum=1342085
 
 Tulip Tree
-    - Overview: https://commons.wikimedia.org/wiki/File:Liriodendron_tulipifera_%28arbre%29_-_Laeken.JPG
-    - Fruit: https://picryl.com/media/blooming-tulip-poplar-liriodendron-tulipifera-on-rock-creek
-    - Leaf: https://www.flickr.com/photos/stanzim/48332029362
+- Overview: https://commons.wikimedia.org/wiki/File:Liriodendron_tulipifera_%28arbre%29_-_Laeken.JPG
+- Fruit: https://picryl.com/media/blooming-tulip-poplar-liriodendron-tulipifera-on-rock-creek
+- Leaf: https://www.flickr.com/photos/stanzim/48332029362
 
 White Pine
-    - Overview: https://www.flickr.com/photos/jsjgeology/39411252702
-    - Cone: https://commons.wikimedia.org/wiki/File:2015-08-07_17_35_09_Eastern_White_Pine_cone_in_the_Franklin_Farm_section_of_Oak_Hill,_Virginia.jpg
-    - Needle: https://www.flickr.com/photos/dendroica/8322433913
+- Overview: https://www.flickr.com/photos/jsjgeology/39411252702
+- Cone: https://commons.wikimedia.org/wiki/File:2015-08-07_17_35_09_Eastern_White_Pine_cone_in_the_Franklin_Farm_section_of_Oak_Hill,_Virginia.jpg
+- Needle: https://www.flickr.com/photos/dendroica/8322433913
 
 Yellow Buckeye
-    - Overview: https://www.flickr.com/photos/aliarda/49875523873
-    - Fruit: https://mlbs.virginia.edu/sites/mlbs.virginia.edu/files/Buckeye%20Fruit%20N5.jpg
-    - Leaf: https://www.flickr.com/photos/blueridgekitties/4654625449
+- Overview: https://www.flickr.com/photos/aliarda/49875523873
+- Fruit: https://mlbs.virginia.edu/sites/mlbs.virginia.edu/files/Buckeye%20Fruit%20N5.jpg
+- Leaf: https://www.flickr.com/photos/blueridgekitties/4654625449
 
 Southern Catalpa
-    - Overview: https://www.flickr.com/photos/hornbeam/29531021158
-    - Fruit: https://commons.wikimedia.org/wiki/File:Catalpa_bignoioides_004.JPG
-    - Leaf: http://www.tree-guide.com/images/styles/600x450-copy_/public/indian-bean-tree-leaf-underside.jpg?itok=VYY6Umak
+- Overview: https://www.flickr.com/photos/hornbeam/29531021158
+- Fruit: https://commons.wikimedia.org/wiki/File:Catalpa_bignoioides_004.JPG
+- Leaf: http://www.tree-guide.com/images/styles/600x450-copy_/public/indian-bean-tree-leaf-underside.jpg?itok=VYY6Umak
 
 American Basswood
-    - Overview: https://picryl.com/media/maryland-state-champion-basswood-tree-98c5b4
-    - Fruit: https://www.flickr.com/photos/evelynfitzgerald/3910571657
+- Overview: https://picryl.com/media/maryland-state-champion-basswood-tree-98c5b4
+- Fruit: https://www.flickr.com/photos/evelynfitzgerald/3910571657
+- Leaf: https://www.flickr.com/photos/evelynfitzgerald/3910571657

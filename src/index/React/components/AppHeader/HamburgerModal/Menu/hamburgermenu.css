@@ -1,9 +1,9 @@
 .HamburgerMenu {
     display: grid;
-    grid-template-rows: 3rem;
-    grid-auto-rows: 3rem;
+    grid-template-rows: 4rem;
+    grid-auto-rows: 4rem;
     align-items: stretch;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .HamburgerMenu .menuHeader {
