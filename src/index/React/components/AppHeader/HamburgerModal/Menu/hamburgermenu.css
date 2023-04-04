@@ -1,0 +1,25 @@
+.HamburgerMenu {
+    display: grid;
+    grid-template-rows: 3rem;
+    grid-auto-rows: 3rem;
+    align-items: stretch;
+    border: 1px solid black;
+}
+
+.HamburgerMenu .menuHeader {
+    background-color: lightgrey;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HamburgerMenu button {
+    border: none;
+    border-top: 1px solid black;
+    background-color: white;
+}
+
+.HamburgerMenu button:active {
+    background-color: lightgray;
+}

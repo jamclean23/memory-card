@@ -37,4 +37,9 @@
     height: 2rem;
     grid-column: 3/4;
     justify-self: right;
+    padding: .2rem;
+}
+
+.hamburger:active {
+    background-color: beige;
 }

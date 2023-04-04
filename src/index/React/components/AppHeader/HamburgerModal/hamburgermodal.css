@@ -1,0 +1,16 @@
+.HamburgerModal {
+    left: 0;
+    top: calc(var(--doc-height) * .084);
+    position: fixed;
+    height: var(--doc-height);
+    width: var(--doc-width);
+    background-color: beige;
+    z-index: 1;
+    overflow: auto;
+}
+
+.testScrollDiv {
+    height: calc(var(--doc-height) * 2);
+    background-color: gray;
+    width: 30%;
+}
