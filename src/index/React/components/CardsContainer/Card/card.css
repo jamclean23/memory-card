@@ -50,6 +50,10 @@
     transform: rotate(.25turn);
 }
 
+.easternhemlock.coneFruitImg {
+    height: 100%;
+}
+
 
 /* EASTER RED CEDAR */
 .easternredcedar .overviewImg, .easternredcedar.overviewImg {
@@ -72,8 +76,8 @@
 
 .floweringdogwood .coneFruitImg {
     position: relative;
-    bottom: calc(var(--doc-width) * .06);
-    transform: rotate(-.25turn);
+    height: 80%;
+    transform: rotate(-.25turn) translate(0, calc(var(--doc-height) * .01));
 }
 
 .floweringdogwood.coneFruitImg {
