@@ -1,42 +1,40 @@
 Icon
-    - Menu Icon: https://icons8.com/icon/vNkcTvQx93Sj/hamburger-menu icon by https://icons8.com">Icons8
-
-Trees:  
+- Menu Icon: https://icons8.com/icon/vNkcTvQx93Sj/hamburger-menu
 
 American Hornbeam  
-    - Overview: Sherief Saleh, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
-    - Fruit: Paul Wray, Iowa State University https://naturalresources.extension.iastate.edu/files/resize/encyclopedia/images/blue_beech4-400x300.jpg
-    - Leaf: http://www.tree-guide.com/images/styles/600x450-copy_/public/american-hornbeam-leaf.jpg?itok=HmRmJyVz
+- Overview: https://creativecommons.org/licenses/by-sa/3.0
+- Fruit: https://naturalresources.extension.iastate.edu/files/resize/encyclopedia/images/blue_beech4-400x300.jpg
+- Leaf: http://www.tree-guide.com/images/styles/600x450-copy_/public/american-hornbeam-leaf.jpg?itok=HmRmJyVz
 
 Eastern Hemlock
-    - Overview: https://www.coniferousforest.com/wp-content/uploads/2016/06/Eastern-Hemlock.jpg
-    - Cone: https://www.michigan.gov/-/media/Project/Websites/invasives/Documents/ID/Disease/hemlock_tree_ID_brochure.pdf?rev=a2d4ca0c46394725ba579b10ddf08122
-    - Needle: https://ohiodnr.gov/wps/wcm/connect/gov/73f56108-818a-401c-a602-c316b5fc23e2/hmlck_est_lf3_lg.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_M1HGGIK0N0JO00QO9DDDDM3000-73f56108-818a-401c-a602-c316b5fc23e2-ne0WN-b
+- Overview: https://www.coniferousforest.com/wp-content/uploads/2016/06/Eastern-Hemlock.jpg
+- Cone: https://www.michigan.gov/-/media/Project/Websites/invasives/Documents/ID/Disease/hemlock_tree_ID_brochure.pdf?rev=a2d4ca0c46394725ba579b10ddf08122
+- Needle: https://ohiodnr.gov/wps/wcm/connect/gov/73f56108-818a-401c-a602-c316b5fc23e2/hmlck_est_lf3_lg.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_M1HGGIK0N0JO00QO9DDDDM3000-73f56108-818a-401c-a602-c316b5fc23e2-ne0WN-b
 
 Eastern Red Cedar:
-    - Overview: Ray Matthews https://www.wildflower.org/gallery/result.php?id_image=41213
-    - Cone: http://www.bio.brandeis.edu/fieldbio/pkenlan/HTML/Cupressaceae/juniperus_virginiana.html
-    - Needle: http://www.bio.brandeis.edu/fieldbio/pkenlan/HTML/Cupressaceae/juniperus_virginiana.html
+- Overview: https://www.wildflower.org/gallery/result.php?id_image=41213
+- Cone: http://www.bio.brandeis.edu/fieldbio/pkenlan/HTML/Cupressaceae/juniperus_virginiana.html
+- Needle: http://www.bio.brandeis.edu/fieldbio/pkenlan/HTML/Cupressaceae/juniperus_virginiana.html
 
 Flowering Dogwood:
-    - Overview: https://www.peakpx.com/624959/dogwood-nature-tree-spring-green-tree-grass
-    - Fruit: https://www.flickr.com/photos/carthamus/49370042316
-    - Leaf: https://www.flickr.com/photos/texaseagle/5649245395
+- Overview: https://www.peakpx.com/624959/dogwood-nature-tree-spring-green-tree-grass
+- Fruit: https://www.flickr.com/photos/carthamus/49370042316
+- Leaf: https://www.flickr.com/photos/texaseagle/5649245395
 
 Fraser Fir:
-    - Overview: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Fraser_Fir.JPG/1024px-Fraser_Fir.JPG
-    - Cone: https://commons.wikimedia.org/wiki/File:Abies_fraseri_cone.jpg
-    - Needle: https://commons.wikimedia.org/wiki/File:Abies_fraseri_foliage.jpg
+- Overview: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Fraser_Fir.JPG/1024px-Fraser_Fir.JPG
+- Cone: https://commons.wikimedia.org/wiki/File:Abies_fraseri_cone.jpg
+- Needle: https://commons.wikimedia.org/wiki/File:Abies_fraseri_foliage.jpg
 
 Northern Red Oak
-    - Overview: https://www.flickr.com/photos/treegrow/31086850246
-    - Fruit: https://commons.wikimedia.org/wiki/File:Quercus_rubra_acorn_J1.jpg
-    - Leaf: https://www.flickr.com/photos/chesbayprogram/37994963516
+- Overview: https://www.flickr.com/photos/treegrow/31086850246
+- Fruit: https://commons.wikimedia.org/wiki/File:Quercus_rubra_acorn_J1.jpg
+- Leaf: https://www.flickr.com/photos/chesbayprogram/37994963516
 
 Red Spruce
-    - Overview: https://www.wncoutdoors.info/red-spruce-along-fs-482b/
-    - Cone: https://commons.wikimedia.org/wiki/File:Picea_rubens_UGA.jpg
-    - Leaf: https://pixnio.com/flora-plants/trees/conifer-spruce-trees-pictures/red-spruce-sprouts-leaves#
+- Overview: https://www.wncoutdoors.info/red-spruce-along-fs-482b/
+- Cone: https://commons.wikimedia.org/wiki/File:Picea_rubens_UGA.jpg
+- Leaf: https://pixnio.com/flora-plants/trees/conifer-spruce-trees-pictures/red-spruce-sprouts-leaves#
 
 River Birch
 - Overview: https://www.flickr.com/photos/fairfaxcounty/16775866715/
