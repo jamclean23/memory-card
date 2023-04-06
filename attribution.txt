@@ -2,7 +2,7 @@ Icon
 - MenuIcon: https://icons8.com/icon/vNkcTvQx93Sj/hamburger-menu
 
 American Hornbeam
-- Overview: https://creativecommons.org/licenses/by-sa/3.0
+- Overview: https://commons.wikimedia.org/wiki/File:A30-1-Carpinus_caroliniana_(American_Hornbeam).JPG
 - Fruit: https://naturalresources.extension.iastate.edu/files/resize/encyclopedia/images/blue_beech4-400x300.jpg
 - Leaf: http://www.tree-guide.com/images/styles/600x450-copy_/public/american-hornbeam-leaf.jpg?itok=HmRmJyVz
 
@@ -68,5 +68,5 @@ Southern Catalpa
 
 American Basswood
 - Overview: https://picryl.com/media/maryland-state-champion-basswood-tree-98c5b4
-- Fruit: https://www.flickr.com/photos/evelynfitzgerald/3910571657
+- Fruit: https://www.ontario.ca/page/basswood
 - Leaf: https://www.flickr.com/photos/evelynfitzgerald/3910571657

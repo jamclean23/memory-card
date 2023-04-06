@@ -1,0 +1,41 @@
+
+.Attributions {
+    background-color: var(--main-background-color);
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-rows: 100%;
+    align-content: center;
+    justify-content: stretch;
+    height: calc(var(--doc-height) - 4.1rem - (var(--doc-height) * .08));
+    padding: .2rem;
+    overflow: hidden;
+}
+
+.Attributions article {
+    background-color: var(--card-background-color);
+    border-radius: 4px;
+    width: 100%;
+    padding: .25rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.Attributions h3 {
+    align-self: center;
+}
+
+.Attributions button {
+    height: 4rem;
+    width: var(--doc-width);
+}
+
+.exitAttributions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.type {
+    padding-left: 2rem;
+}

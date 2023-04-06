@@ -1,0 +1,15 @@
+
+.Donate {
+    background-color: var(--main-background-color);
+    border-top: 1px solid black;
+}
+
+.Donate button {
+    height: 4rem;
+    width: var(--doc-width);
+}
+
+.exitDonate {
+    position: fixed;
+    bottom: 0;
+}

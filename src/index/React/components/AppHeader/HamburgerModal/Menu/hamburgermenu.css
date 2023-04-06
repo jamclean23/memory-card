@@ -1,6 +1,5 @@
 .HamburgerMenu {
     display: grid;
-    grid-template-rows: 4rem;
     grid-auto-rows: 4rem;
     align-items: stretch;
     border-bottom: 1px solid black;
