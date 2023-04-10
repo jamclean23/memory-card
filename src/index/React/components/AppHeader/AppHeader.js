@@ -37,7 +37,7 @@ function AppHeader (props) {
     return(
         <div className='AppHeader'>
             <h1 className='hero'>ID That Tree!!</h1>
-            <img className='hamburger' src={hamburger} alt='menu' onClick={handleMenuClick}/>
+            <img draggable='false' className='hamburger' src={hamburger} alt='menu' onClick={handleMenuClick}/>
             {modal}
         </div>
     );
