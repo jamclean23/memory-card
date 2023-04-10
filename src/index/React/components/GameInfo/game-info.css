@@ -6,16 +6,15 @@
 }
 
 .GameInfo {
-    align-self: stretch;
     padding-top: .2rem;
     white-space: nowrap;
     font-family: DellaRespira;
     background-color: white;
-    box-shadow: 0 0 6px black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     height: calc(var(--doc-height) * .08);
+    box-shadow: 0 0 4px 0 black;
 }
 
 .findTreeContainer {

@@ -7,10 +7,11 @@ import { getTrees } from '../../../treeImageHandling.js';
 import { generateCardsArray } from './generateCards.js';
 import { Modal } from './Modal/Modal.js';
 import './cardscontainer.css';
+import { LoadingBar } from './LoadingBar/LoadingBar.js';
 
 function CardsContainer (props) {
     const [treesImgs, setTreesImgs] = useState(getTrees());
-    const [cards, setCards] = useState(generateCardsArray(treesImgs, handleCardClick, handleRightSwipe, handleSwiping, handleUp));
+    const [cards, setCards] = useState(generateCardsArray(treesImgs, handleCardClick, handleRightSwipe, handleSwiping, handleUp, reportImageLoaded));
     const [ongoingCards, setOngoingCards] = useState(cards);
     const [cardsToDisplay, setCardsToDisplay] = useState([]);
     const [correctCard, setCorrectCard] = useState('');
@@ -19,7 +20,9 @@ function CardsContainer (props) {
     const [rightAnswers, setRightAnswers] = useState(0);
     const [complete, setComplete] = useState(false);
     const [content, setContent] = useState('');
-    
+    const [imagesLoaded, setImagesLoaded] = useState(0);
+    const [loadingBar, setLoadingBar] = useState('');
+
     const cardsContent = (<>
                         {cardsToDisplay[0]}
                         {cardsToDisplay[1]}
@@ -27,6 +30,23 @@ function CardsContainer (props) {
                         {/* {cards} */}
                         {modal}
                         </>);
+
+    // Images loaded counter
+    useEffect(() => {
+        // All images loaded
+        if (imagesLoaded === 9) {
+            console.log('All loaded');
+            const cardsContainerDom = document.querySelector('.cardsContainer');
+            cardsContainerDom.style.display = 'block';
+            setLoadingBar('');
+        } else {
+            const cardsContainerDom = document.querySelector('.cardsContainer');
+            cardsContainerDom.style.display = 'none';
+            console.log(loadingBar);
+            setLoadingBar(<LoadingBar/>);
+        }
+    }, [imagesLoaded]);
+
     // On Mount
     useEffect(() => {
         newTurn();
@@ -59,11 +79,18 @@ function CardsContainer (props) {
         if (complete) {
             props.setTargetTree('Congrats!');
             props.setSlideNumber(cards.length);
+            setImagesLoaded(9);
             setContent(<EndCard resetGame={props.resetGame} rightAnswers={rightAnswers} length={cards.length}/>);
         } else {
             setContent(cardsContent);
         }
     }, [complete, cardsToDisplay, modal]);
+
+
+    // Increment images loaded counter 
+    function reportImageLoaded () {
+        setImagesLoaded(imagesLoaded => imagesLoaded + 1);
+    }
 
     function isSelectionCorrect (correctKey, chosenKey) {
         if (correctKey === chosenKey){
@@ -78,6 +105,10 @@ function CardsContainer (props) {
     }
 
     function newTurn () {
+
+        // Reset loaded images counter
+        setImagesLoaded(0);
+
         props.setSlideNumber(() => { return props.slideNumber + 1 });
         setContent(cardsContent);
 
@@ -215,9 +246,12 @@ function CardsContainer (props) {
     }
 
     return (
+            <>
             <div className='cardsContainer'>
                 {content}
             </div>
+            {loadingBar}
+            </>
     )
 }
 

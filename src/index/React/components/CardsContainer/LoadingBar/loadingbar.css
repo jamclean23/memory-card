@@ -1,0 +1,19 @@
+.LoadingBar {
+    display: flex;
+    align-items: center;
+    padding-inline: 2rem;
+    font-size: 1.25rem;
+    position: fixed;
+    top: calc(((var(--doc-height) * .8) / 2) - 1rem);
+    left: calc((var(--doc-width)/2) - 7rem);
+    background-color: white;
+    border-radius: 6px;
+    width: 14rem;
+    height: 2.5rem;
+    justify-content: space-between;
+    box-shadow: 0 0 4px 0 black;
+}
+
+.loadingGif {
+    height: 2rem;
+}

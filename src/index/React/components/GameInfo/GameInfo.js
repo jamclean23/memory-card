@@ -27,7 +27,13 @@ function GameInfo (props) {
             setMessage(props.targetTree);
             document.querySelector('.findTreeContainer').classList = 'findTreeContainer';
         } else {
-            setMessage('Swipe right on this tree: ' + props.targetTree + ' →');
+            let tree;
+            if (props.targetTree) {
+                tree = props.targetTree;
+            } else {
+                tree = '';
+            }
+            setMessage('Swipe right on this tree: ' + tree + ' →');
             document.querySelector('.findTreeContainer').classList = 'findTreeContainer';
         }
     }, [props.targetTree]);

@@ -1,10 +1,9 @@
 @echo off
 IF "%1"=="" (
     echo No parameters have been provided.
-    set "default=GH-Pages push"
-    echo Setting comment to %default%
+    echo Setting comment to Gh-Pages Push
     git add dist -f
-    git commit -m "%default%"
+    git commit -m "Gh-Pages Push"
     echo Pushing to Github Pages ...
     git subtree push --prefix dist origin gh-pages
     echo Done.

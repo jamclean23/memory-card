@@ -11,7 +11,6 @@
 }
 
 .AppHeader {
-    box-shadow: 0px 0px 4px black;
     background-color: var(--header-background-color);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -19,6 +18,8 @@
     align-items: center;
     padding-inline: .4rem;
     height: calc(var(--doc-height) * .08);
+    box-shadow: 0 0 4px black;
+    z-index: 1;
 }
 
 
