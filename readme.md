@@ -12,7 +12,8 @@
 <ol>
 <li>Gather resources for the following images:<br/><ol><li>Overview</li><li>Cone/Fruit</li><li>Needle/Leaf</li></ol></li>
 <li>Add links to images to attributions.txt.</li>
-<li>Add folder with following structure: [shortnamefortree]>overview.jpeg, conefruit.jpeg, needleleaf.jpeg</li>
+<li>Run update-attributions.bat</li>
+<li>Add folder with following structure in src/index/assets/trees: [shortnamefortree]>overview.jpeg, conefruit.jpeg, needleleaf.jpeg</li>
 <li>Add shortnamefortree association with title in treeImageHandling.js</li>
 <li>Adjust images for tree in card.css</li>
 </ol>

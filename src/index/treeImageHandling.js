@@ -49,8 +49,42 @@ function getTrees () {
                     return 'American Basswood';
                 case 'southerncatalpa':
                     return 'Southern Catalpa';
+                case 'blackcherry':
+                    return 'Black Cherry';
                 default:
                     return 'Set tree name in "treeImageHandling.js"';
+                case 'slipperyelm':
+                    return 'Slippery Elm';
+                case 'wingedelm':
+                    return 'Winged Elm';
+                case 'mountainash':
+                    return 'Mountain Ash';
+                case 'sassafras':
+                    return 'Sassafras';
+                case 'blacklocust':
+                    return 'Black Locust';
+                case 'postoak':
+                    return 'Post Oak';
+                case 'chestnutoak':
+                    return 'Chestnut Oak';
+                case 'blackjackoak':
+                    return 'Blackjack Oak';
+                case 'southernredoak':
+                    return 'Southern Red Oak';
+                case 'scarletoak':
+                    return 'Scarlet Oak';
+                case 'whiteoak':
+                    return 'White Oak';
+                case 'firecherry':
+                    return 'Fire Cherry';
+                case 'sycamore':
+                    return 'Sycamore';
+                case 'virginiapine':
+                    return 'Virginia Pine';
+                case 'loblollypine':
+                    return 'Loblolly Pine';
+                case 'pitchpine':
+                    return 'Pitch Pine';
             }
         }
 

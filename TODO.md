@@ -1,4 +1,27 @@
 
 - Add hella trees  
+    1. Cucumber Magnolia
+    2. Umbrella Magnolia
+    3. Carolina Hemlock
+    4. Southern Sugar Maple
+    5. Striped  Maple
+    6. Red Maple
+    7. Sugar Maple
+    8. Mountain Maple
+    9. Mimosa, Silktree
+    10. Yellow Birch
+    11. Pignut Hickory
+    12. Shagbark Hickory
+    13. Mockernut Hickory
+    14. Eastern Redbud
+    15. Bigfruit Hawthorn
+    16. American Beech
+    17. White Ash
+    18. American Holly
+    19. Black Walnut
+    20. Sweetgum
+    21. Shortleaf Pine
+    22. Pitch Pine
+
 
 - Fix swipe events in desktop

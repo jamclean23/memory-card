@@ -35,7 +35,7 @@
     overflow: hidden;
     position: relative;
     box-shadow: 0 0 4px 0 black;
-    background-color: white;
+    background-color: black;
 }
 
 /* AMERICAN HORNBEAM */
@@ -90,10 +90,6 @@
     transform: rotate(.25turn);
 }
 
-.floweringdogwood .imgFrame, .floweringdogwood.imgFrame {
-    background-color: rgb(201, 217, 243);
-}
-
 /* FRASER FIR */
 .fraserfir .needleLeafImg, .fraserfir.needleLeafImg {
     height: 60%;
@@ -103,28 +99,16 @@
     height: 30% !important;
 }
 
-.fraserfir .needleLeafFrame, .fraserfir.needleLeafFrame {
-    background-color: rgb(23, 47, 18);
-}
-
 /* RIVER BIRCH */
 .rvrbirch .needleLeafImg, .rvrbirch.needleLeafImg {
     height: 70%;
     transform: rotate(-.25turn);
 }
 
-.rvrbirch .needleLeafFrame,.rvrbirch.needleLeafFrame {
-    background-color: rgb(27, 40, 29);
-}
-
 /* TULIP TREE */
 .tuliptree .needleLeafImg, .tuliptree.needleLeafImg {
     height: 70%;
     transform: rotate(.25turn);
-}
-
-.tuliptree .needleLeafFrame, .tuliptree.needleLeafFrame {
-    background-color: rgb(212, 231, 245);
 }
 
 /* WHITE PINE */
@@ -140,10 +124,6 @@
 /* YELLOW BUCKEYE */
 .ylwbuckeye .coneFruitImg, .ylwbuckeye.coneFruitImg {
     height: 80%;
-}
-
-.ylwbuckeye .imgFrame, .ylwbuckeye.imgFrame {
-    background-color: rgb(208, 211, 219);
 }
 
 .ylwbuckeye.overviewImg {
@@ -162,10 +142,6 @@
 .southerncatalpa .needleLeafImg, .southerncatalpa.needleLeafImg {
     height: 80%;
     transform: rotate(-.25turn);
-}
-
-.southerncatalpa .imgFrame, .southerncatalpa.imgFrame {
-    background-color: rgb(193, 237, 254);
 }
 
 /* AMERICAN BASSWOOD */
@@ -197,6 +173,128 @@
     height: 40% !important;
 }
 
-.tblmtnpine .imgFrame {
-    background-color: rgb(148, 228, 252);
+/* Black Cherry */
+.blackcherry.needleLeafImg {
+    height: 70%;
+}
+
+/* Slippery Elm */
+.slipperyelm .needleLeafImg, .slipperyelm.needleLeafImg {
+    transform: rotate(.5turn);
+}
+.slipperyelm.needleLeafImg {
+    height: 80%;
+}
+.slipperyelm .coneFruitImg, .slipperyelm.coneFruitImg {
+    height: 80%;
+}
+.slipperyelm .coneFruitFrame {
+    background-color: black;
+}
+
+/* Sassafras */
+.sassafras .needleLeafImg, .sassafras.needleLeafImg {
+    height: 70%;
+}
+
+/* Black Locust */
+.blacklocust.needleLeafImg {
+    height: 70%;
+}
+
+/* Post Oak */
+.postoak .overviewImg {
+    height: 70%;
+}
+.postoak.needleLeafImg {
+    height: 70%;;
+}
+
+/* Chestnut Oak */
+.chestnutoak.needleLeafImg {
+    height: 60%;
+}
+
+/* Blackjack Oak */
+.blackjackoak.needleLeafImg {
+    height: 60%;
+}
+.blackjackoak.overviewImg {
+    height: 50% !important;
+}
+
+/* Southern Red Oak */
+.southernredoak .coneFruitImg {
+    height: 50%;
+}
+.southernredoak.coneFruitImg {
+    height: 40%;
+}
+
+/* Scarlet Oak */
+.scarletoak.needleLeafImg {
+    height: 80%;
+}
+
+/* White Oak */
+.whiteoak .overviewImg {
+    height: 55%;
+    transform: translate(5%, 0);
+}
+.whiteoak.overviewImg {
+    height: 50% !important;
+}
+.whiteoak.coneFruitImg {
+    height: 60%;
+}
+.whiteoak .needleLeafImg {
+    height: 70%;
+}
+.whiteoak.needleLeafImg {
+    height: 60% !important;
+}
+
+/* Sycamore */
+.sycamore .coneFruitImg, .sycamore.coneFruitImg {
+    height: 70%;
+    transform: translate(10%, 0);
+}
+.sycamore .needleLeafImg {
+    height: 60%;
+}
+.sycamore.needleLeafImg {
+    height: 50%;
+}
+
+/* Virginia Pine */
+.virginiapine .coneFruitImg {
+    height: 80%;
+}
+.virginiapine.coneFruitImg {
+    height: 60%;
+}
+.virginiapine.needleLeafImg {
+    height: 70%;
+}
+
+/* Loblolly Pine */
+.loblollypine.overviewImg {
+    height: 60% !important;
+}
+.loblollypine.needleLeafImg {
+    height: 70%;
+}
+
+/* Pitch Pine */
+.pitchpine.overviewImg {
+    height: 60% !important;
+}
+.pitchpine.coneFruitImg {
+    height: 60%;
+}
+.pitchpine .needleLeafImg {
+    height: 80%;
+}
+.pitchpine.needleLeafImg {
+    height: 40% !important;
 }

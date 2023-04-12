@@ -26,8 +26,10 @@ function CardsContainer (props) {
     const cardsContent = (<>
                         {cardsToDisplay[0]}
                         {cardsToDisplay[1]}
+                        {/* UNCOMMENT AFTER DEBUG */}
                         {cardsToDisplay[2]}
-                        {/* {cards} */}
+                        {/* COMMENT AFTER DEBUG */}
+                        {/* {cards.filter((card) => card.props.treeName === 'pitchpine')} */}
                         {modal}
                         </>);
 
@@ -35,14 +37,12 @@ function CardsContainer (props) {
     useEffect(() => {
         // All images loaded
         if (imagesLoaded === 9) {
-            console.log('All loaded');
             const cardsContainerDom = document.querySelector('.cardsContainer');
             cardsContainerDom.style.display = 'block';
             setLoadingBar('');
         } else {
             const cardsContainerDom = document.querySelector('.cardsContainer');
             cardsContainerDom.style.display = 'none';
-            console.log(loadingBar);
             setLoadingBar(<LoadingBar/>);
         }
     }, [imagesLoaded]);
