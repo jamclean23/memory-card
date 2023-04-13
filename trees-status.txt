@@ -35,6 +35,9 @@ Current Trees:
 - Black Walnut
 - American Holly
 - White Ash
+- American Beech
+- Hawthorn
+- Eastern Redbud
 
 Planned Trees:
 - Cucumber Magnolia
@@ -50,6 +53,3 @@ Planned Trees:
 - Pignut Hickory
 - Shagbark Hickory
 - Mockernut Hickory
-- Eastern Redbud
-- Bigfruit Hawthorn
-- American Beech

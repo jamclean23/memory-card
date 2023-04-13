@@ -180,3 +180,18 @@ White Ash
 - Overview: https://commons.wikimedia.org/wiki/File:Fraxinus_americana_002.jpg
 - Seed: https://commons.wikimedia.org/wiki/File:Fraxinus_americana_seeds.jpg
 - Leaf: https://www.flickr.com/photos/evelynfitzgerald/3911851294
+
+American Beech
+- Overview: https://www.flickr.com/photos/93854456@N03/10802718515
+- Fruit: https://www.flickr.com/photos/138014579@N08/37034236702
+- Leaf: https://commons.wikimedia.org/wiki/File:Fagus_grandifolia_beech_leaves_close.jpg
+
+Hawthorn
+- Overview: https://p1.pxfuel.com/preview/283/469/231/hawthorn-fall-trees.jpg
+- Fruit: https://www.flickr.com/photos/8583446@N05/3960994220
+- Leaf: https://www.flickr.com/photos/8583446@N05/6426132439
+
+Eastern Redbud
+- Overview: https://www.flickr.com/photos/29261037@N02/17748238885
+- Leaf: https://commons.wikimedia.org/wiki/File:2020-07-06_16_08_32_Leaves_in_mid-summer_on_an_Eastern_Redbud_along_Tranquility_Court_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg
+- Fruit: https://commons.wikimedia.org/wiki/File:2021-05-17_16_00_50_Eastern_Redbud_immature_seed_pods_along_Old_Dairy_Road_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg

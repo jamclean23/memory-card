@@ -331,3 +331,45 @@
 .whiteash.needleLeafImg {
     height: 45%;
 }
+
+/* American Beech */
+.americanbeech .overviewImg {
+    height: 80%;
+}
+.americanbeech.overviewImg {
+    height: 60% !important;
+}
+.americanbeech .coneFruitImg {
+    height: 60%;
+}
+.americanbeech.coneFruitImg {
+    height: 50%;
+}
+.americanbeech.needleLeafImg {
+    height: 70% !important;
+}
+
+/* Hawthorn */
+.hawthorn .coneFruitImg, .hawthorn.coneFruitImg {
+    height: 80%;
+}
+.hawthorn.needleLeafImg {
+    height: 55%;
+}
+
+/* Easter Redbud */
+.easternredbud .overviewImg {
+    height: 90%;
+    transform: translate(8%, 0);
+}
+.easternredbud.coneFruitImg {
+    height: 60% !important;
+}
+.easternredbud .needleLeafImg {
+    height: 80%;
+    transform: translate(-8%, 0);
+}
+.easternredbud.needleLeafImg {
+    height: 80% !important;
+    transform: translate(-8%, 0);
+}

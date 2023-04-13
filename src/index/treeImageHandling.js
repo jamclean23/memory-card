@@ -95,6 +95,12 @@ function getTrees () {
                     return 'American Holly';
                 case 'whiteash':
                     return 'White Ash';
+                case 'americanbeech':
+                    return 'American Beech';
+                case 'hawthorn':
+                    return 'Hawthorn';
+                case 'easternredbud':
+                    return 'Eastern Redbud';
             }
         }
 

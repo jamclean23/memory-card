@@ -13,9 +13,7 @@
     11. Pignut Hickory
     12. Shagbark Hickory
     13. Mockernut Hickory
-    14. Eastern Redbud
-    15. Bigfruit Hawthorn
-    16. American Beech
+
 
 
 - Fix swipe events in desktop
