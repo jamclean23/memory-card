@@ -1,5 +1,6 @@
 @echo off
-IF %1=="" (
+
+IF "%1"=="" (
     echo No parameters have been provided.
     echo Setting comment to Gh-Pages Push
     git add dist -f

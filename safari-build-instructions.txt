@@ -1,0 +1,6 @@
+git checkout main ./src/index/trees
+git checkout main./attribution.txt
+git add .
+git commit -m "Example Safari Build"
+npm run buildProd
+.\safari-pages-push.bat
