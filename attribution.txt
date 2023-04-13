@@ -155,3 +155,28 @@ Pitch Pine
 - Overview: https://commons.wikimedia.org/wiki/File:Pinus_rigida_in_the_Morris_Arboretum.jpg
 - Cone: https://commons.wikimedia.org/wiki/File:Pinus_rigida_cone_Poland.jpg
 - Needle: https://www.flickr.com/photos/9428166@N03/3296538530
+
+Shortleaf Pine
+- Overview: https://commons.wikimedia.org/wiki/File:Pinus_echinata_3zz.jpg
+- Cone: https://www.flickr.com/photos/dendroica/8132423388
+- Needle: https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Pinus_echinata_male_cones.jpg/640px-Pinus_echinata_male_cones.jpg
+
+Sweet Gum
+- Overview: https://commons.wikimedia.org/wiki/File:Liquidambar_styraciflua_in_Golden_Valley_Tree_Park,_May_2022_03.jpg
+- Pod: https://commons.wikimedia.org/wiki/File:American_sweetgum_tree_balls_%28spiny_seed_pods%29_--_Liquidambar_styraciflua.jpg
+- Leaf: https://www.flickr.com/photos/quintarhode/49771439476
+
+Black Walnut
+- Overview: https://commons.wikimedia.org/wiki/File:The_Black_Walnut_Tree_Of_Marble_Hill_Park,_London._%284621674542%29.jpg
+- Fruit: https://commons.wikimedia.org/wiki/File:Juglans_nigra_%28Black_Walnut%29_%2835706717826%29.jpg
+- Leaf: https://www.flickr.com/photos/jsjgeology/49082743008
+
+American Holly
+- Overview: https://www.flickr.com/photos/tgpotterfield/6361475733
+- Fruit: https://commons.wikimedia.org/wiki/File:Ilex_opaca_%27Miss_Butler%27_%28Cultivar_of_American_Holly%29_%2831953982266%29.jpg
+- Leaf: https://commons.wikimedia.org/wiki/File:Ilex_opaca_13zz.jpg
+
+White Ash
+- Overview: https://commons.wikimedia.org/wiki/File:Fraxinus_americana_002.jpg
+- Seed: https://commons.wikimedia.org/wiki/File:Fraxinus_americana_seeds.jpg
+- Leaf: https://www.flickr.com/photos/evelynfitzgerald/3911851294

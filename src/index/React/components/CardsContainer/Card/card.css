@@ -298,3 +298,36 @@
 .pitchpine.needleLeafImg {
     height: 40% !important;
 }
+
+/* Shortleaf Pine */
+.shortleafpine .coneFruitImg {
+    height: 80%;
+}
+.shortleafpine.coneFruitImg {
+    height: 50% !important;
+}
+.shortleafpine.needleLeafImg {
+    height: 70% !important;
+}
+
+/* Sweet Gum */
+.sweetgum .needleLeafImg {
+    height: 90%;
+}
+.sweetgum.needleLeafImg {
+    height: 70% !important;
+}
+.sweetgum.coneFruitImg {
+    height: 70% !important;
+}
+
+/* White Ash */
+.whiteash.coneFruitImg {
+    height: 70% !important;
+}
+.whiteash .needleLeafImg {
+    height: 55%;
+}
+.whiteash.needleLeafImg {
+    height: 45%;
+}

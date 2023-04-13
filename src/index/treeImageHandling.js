@@ -85,6 +85,16 @@ function getTrees () {
                     return 'Loblolly Pine';
                 case 'pitchpine':
                     return 'Pitch Pine';
+                case 'shortleafpine':
+                    return 'Shortleaf Pine';
+                case 'sweetgum':
+                    return 'Sweet Gum';
+                case 'blackwalnut':
+                    return 'Black Walnut';
+                case 'americanholly':
+                    return 'American Holly';
+                case 'whiteash':
+                    return 'White Ash';
             }
         }
 

@@ -30,6 +30,11 @@ Current Trees:
 - Virginia Pine
 - Loblolly Pine
 - Pitch Pine
+- Shortleaf Pine
+- Sweet Gum
+- Black Walnut
+- American Holly
+- White Ash
 
 Planned Trees:
 - Cucumber Magnolia
@@ -48,8 +53,3 @@ Planned Trees:
 - Eastern Redbud
 - Bigfruit Hawthorn
 - American Beech
-- White Ash
-- American Holly
-- Black Walnut
-- Sweetgum
-- Shortleaf Pine

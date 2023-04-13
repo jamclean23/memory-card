@@ -15,7 +15,6 @@ import { App } from './React/App.js';
 
 // ====== DETECT BROWSER ======
 
-console.log(navigator.platform);
 if (/iPhone/.test(navigator.platform) || /iPad/.test(navigator.platform)) {
     window.location.replace("https://jamclean23.github.io/id-that-tree-safari/");
 }

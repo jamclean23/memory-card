@@ -16,11 +16,6 @@
     14. Eastern Redbud
     15. Bigfruit Hawthorn
     16. American Beech
-    17. White Ash
-    18. American Holly
-    19. Black Walnut
-    20. Sweetgum
-    21. Shortleaf Pine
 
 
 - Fix swipe events in desktop
