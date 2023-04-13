@@ -22,6 +22,7 @@ function Attributions (props) {
         <div className='Attributions'>
             <article>
                 <h3>Attributions</h3>
+                <p>Links to the photos used in this app.</p>
                 {content}
             </article>
             <button className='exitAttributions' onClick={props.handleSubMenuBack}>Back</button>
