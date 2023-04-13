@@ -23,12 +23,14 @@ if (/iPhone/.test(navigator.platform) || /iPad/.test(navigator.platform)) {
 
 // ====== WINDOW ======
 
+// Stop context event
 window.oncontextmenu = function(event) {
     event.preventDefault();
     event.stopPropagation();
     return false;
 };
 
+// Get document height and width and assign them as css variables
 function documentHeight () {
     const doc = document.documentElement;
     doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
@@ -39,15 +41,15 @@ function documentWidth () {
     doc.style.setProperty('--doc-width', `${window.innerWidth}px`);
 }
 
+// Update height and width on resize
 function updateWindow() {
     documentHeight();
     documentWidth();
 }
-
+// Initial window size update
 updateWindow();
 
 // Event Listeners
-
 window.addEventListener('resize', updateWindow);
 
 // ====== RENDER ======
