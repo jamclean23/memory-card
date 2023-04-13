@@ -7,8 +7,8 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { AppHeader } from './components/AppHeader/AppHeader.js';
 import { GameInfo } from './components/GameInfo/GameInfo.js';
-// import { CardsContainer } from './components/CardsContainer/CardsContainer.js';
-const CardsContainer = React.lazy(() => import('./components/CardsContainer/CardsContainer.js').then(module => ({ default: module.CardsContainer })));
+import { CardsContainer } from './components/CardsContainer/CardsContainer.js';
+// const CardsContainer = React.lazy(() => import('./components/CardsContainer/CardsContainer.js').then(module => ({ default: module.CardsContainer })));
 import './app.css';
 import uniqid from 'uniqid';
 import { LoadingBar } from './components/CardsContainer/LoadingBar/LoadingBar.js';
@@ -37,9 +37,11 @@ function App (props) {
         <div className='App'>
             <AppHeader />
             <GameInfo totalSlides={totalSlides} slideNumber={slideNumber} targetTree={targetTree}/>
-            <Suspense fallback={<LoadingBar />}>
+            {/* <Suspense fallback={<LoadingBar />}>
                 <CardsContainer setTotalSlides={setTotalSlides} setSlideNumber={setSlideNumber} slideNumber={slideNumber} key={gameKey} setTargetTree={setTargetTree} resetGame={resetGame}/>
-            </Suspense>
+            </Suspense> */}
+            <CardsContainer setTotalSlides={setTotalSlides} setSlideNumber={setSlideNumber} slideNumber={slideNumber} key={gameKey} setTargetTree={setTargetTree} resetGame={resetGame}/>
+
         </div>
     );
 }

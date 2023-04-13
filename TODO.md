@@ -21,7 +21,6 @@
     19. Black Walnut
     20. Sweetgum
     21. Shortleaf Pine
-    22. Pitch Pine
 
 
 - Fix swipe events in desktop
