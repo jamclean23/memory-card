@@ -18,9 +18,11 @@ function getTrees () {
         // Get tree name from category name and assign to object
         trees[category].name = getTreeName(category);
         trees[category].catName = category;
-
+        
         function getTreeName(category) {
             switch(category) {
+                default:
+                    return 'Set tree name in "treeImageHandling.js"';
                 case 'americanhornbeam':
                     return 'American Hornbeam';
                 case 'easternhemlock':
@@ -51,8 +53,6 @@ function getTrees () {
                     return 'Southern Catalpa';
                 case 'blackcherry':
                     return 'Black Cherry';
-                default:
-                    return 'Set tree name in "treeImageHandling.js"';
                 case 'slipperyelm':
                     return 'Slippery Elm';
                 case 'wingedelm':
@@ -85,6 +85,64 @@ function getTrees () {
                     return 'Loblolly Pine';
                 case 'pitchpine':
                     return 'Pitch Pine';
+                case 'shortleafpine':
+                    return 'Shortleaf Pine';
+                case 'sweetgum':
+                    return 'Sweet Gum';
+                case 'blackwalnut':
+                    return 'Black Walnut';
+                case 'americanholly':
+                    return 'American Holly';
+                case 'whiteash':
+                    return 'White Ash';
+                case 'americanbeech':
+                    return 'American Beech';
+                case 'hawthorn':
+                    return 'Hawthorn';
+                case 'easternredbud':
+                    return 'Eastern Redbud';
+                case 'americanchestnut':
+                    return 'American Chestnut';
+                case 'sourwood':
+                    return 'Sourwood';
+                case 'persimmon':
+                    return 'Persimmon';
+                case 'blackhaw':
+                    return 'Blackhaw';    
+                case 'elderberry':
+                    return 'Elderberry';
+                case 'tagalder':
+                    return 'Tag Alder';
+                case 'mountainwinterberry':
+                    return 'Mountain Winterberry';
+                case 'pawpaw':
+                    return 'Pawpaw Tree';
+                case 'staghornsumac':
+                    return 'Staghorn Sumac';
+                case 'mockernuthickory':
+                    return 'Mockernut Hickory';
+                case 'shagbarkhickory':
+                    return 'Shagbark Hickory';
+                case 'pignuthickory':
+                    return 'Pignut Hickory';
+                case 'yellowbirch':
+                    return 'Yellow Birch';
+                case 'mimosa':
+                    return 'Mimosa';
+                case 'mountainmaple':
+                    return 'Mountain Maple';
+                case 'sugarmaple':
+                    return 'Sugar Maple';
+                case 'redmaple':
+                    return 'Red Maple';
+                case 'stripedmaple':
+                    return 'Striped Maple';
+                case 'carolinahemlock':
+                    return 'Carolina Hemlock';
+                case 'umbrellamagnolia':
+                    return 'Umbrella Magnolia';
+                case 'cucumbermagnolia':
+                    return 'Cucumber Magnolia';
             }
         }
 
