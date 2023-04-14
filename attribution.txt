@@ -270,3 +270,33 @@ Mountain Maple
 - Overview: https://commons.wikimedia.org/wiki/File:Acer_spicatum_1_%2814812229830%29.jpg
 - Bloom: https://commons.wikimedia.org/wiki/File:Acer_spicatumQC02.JPG
 - Leaf: https://www.flickr.com/photos/158661726@N06/38913695894/
+
+Sugar Maple
+- Overview: https://commons.wikimedia.org/wiki/File:Acer_saccharum.jpg
+- Seed: https://commons.wikimedia.org/wiki/File:Acer_saccharum_seeds.jpg
+- Leaf: https://commons.wikimedia.org/wiki/File:Acer_saccharum_1-jgreenlee_%285098070608%29.jpg
+
+Red Maple
+- Overview: https://commons.wikimedia.org/wiki/File:Acer_rubrum_%28red_maple_tree_in_fall_colors%29_%28Newark_campus_of_Ohio_State_University,_Newark,_Ohio,_USA%29_%2820_October_2015%29_3_%2821724086524%29.jpg
+- Seed: https://www.flickr.com/photos/pbouchard/33736087126
+- Leaf: https://www.flickr.com/photos/50697352@N00/9086848688
+
+Striped Maple
+- Overview: https://www.flickr.com/photos/138014579@N08/24600697026
+- Seed: https://commons.wikimedia.org/wiki/File:Striped_Maple_samaras_%282984826963%29.jpg
+- Leaf: https://commons.wikimedia.org/wiki/File:Acer_pensylvanicum_leaves.jpg
+
+Carolina Hemlock
+- Overview: https://commons.wikimedia.org/wiki/File:Tsuga_caroliniana_Rog%C3%B3w.jpg
+- Cone: https://commons.wikimedia.org/wiki/File:Tsuga_caroliniana_cones.JPG
+- Needle: https://commons.wikimedia.org/wiki/File:Tsuga_caroliniana_foliage.jpg
+
+Umbrella Magnolia
+- Overview: https://www.flickr.com/photos/tgpotterfield/6964573945
+- Seedpod: https://commons.wikimedia.org/wiki/File:Magnolia_tripetala_fruit.jpg
+- Leaf: https://www.flickr.com/photos/tgpotterfield/34961859831
+
+Cucumber Magnolia
+- Overview: https://commons.wikimedia.org/wiki/File:Magnolia_acuminata_%28cucumber_tree%29_1.jpg
+- Seedpod: https://commons.wikimedia.org/wiki/File:Cucumbertree_%28Magnolia_acuminata%29_%2828442933545%29.jpg
+- Leaf: https://www.flickr.com/photos/tgpotterfield/6513945661

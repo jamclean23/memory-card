@@ -38,27 +38,26 @@ Current Trees:
 - American Beech
 - Hawthorn
 - Eastern Redbud
+- American Chestnut
+- Sourwood
+- Persimmon
+- Blackhaw
+- Elderberry
+- Tag Alder
+- Mountain Winterberry
+- Pawpaw Tree
+- Staghorn sumac
+- Mockernut Hickory
+- Shagbark Hickory
+- Pignut Hickory
+- Yellow Birch
+- Mimosa
+- Mountain Maple
+- Sugar Maple
+- Red Maple
+- Striped Maple
+- Carolina Hemlock
+- Umbrella Magnolia
+- Cucumber Magnolia
 
 Planned Trees:
-- Cucumber Magnolia
-- Umbrella Magnolia
-- Carolina Hemlock
-- Southern Sugar Maple
-- Striped  Maple
-- Red Maple
-- Sugar Maple
-- Mountain Maple
-- Mimosa, Silktree
-- Yellow Birch
-- Pignut Hickory
-- Shagbark Hickory
-- Mockernut Hickory
-- Staghorn sumac
-- Pawpaw
-- Mountain winterberry
-- Hazel alder/tag alder
-- Elderberry
-- Blackhaw
-- Persimmons
-- Sourwood
-- American chestnut

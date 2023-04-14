@@ -535,3 +535,61 @@
 .mountainmaple.needleLeafImg {
     height: 60% !important;
 }
+
+/* Sugar Maple */
+.sugarmaple.coneFruitImg {
+    height: 70% !important;
+}
+.sugarmaple.needleLeafImg {
+    height: 70% !important;
+}
+
+/* Red Maple */
+.redmaple.coneFruitImg {
+    height: 70% !important;
+}
+.redmaple.needleLeafImg {
+    height: 70% !important;
+}
+
+/* Carolina Hemlock */
+.carolinahemlock .needleLeafImg {
+    height: 70%;
+}
+.carolinahemlock.needleLeafImg {
+    height: 70% !important;
+}
+
+/* Umbrella Magnolia */
+.umbrellamagnolia .overviewImg {
+    height: 80%;
+}
+.umbrellamagnolia.overviewImg {
+    height: 50% !important;
+}
+.umbrellamagnolia.coneFruitImg {
+    height: 50% !important;
+}
+.umbrellamagnolia .needleLeafImg {
+    height: 50%;
+}
+.umbrellamagnolia.needleLeafImg {
+    height: 50% !important;
+}
+
+/* Cucumber Magnolia */
+.cucumbermagnolia .overviewImg {
+    height: 60%;
+}
+.cucumbermagnolia.overviewImg {
+    height: 40% !important;
+}
+.cucumbermagnolia.coneFruitImg {
+    height: 50% !important;
+}
+.cucumbermagnolia .needleLeafImg {
+    height: 60%;
+}
+.cucumbermagnolia.needleLeafImg {
+    height: 50% !important;
+}

@@ -131,6 +131,18 @@ function getTrees () {
                     return 'Mimosa';
                 case 'mountainmaple':
                     return 'Mountain Maple';
+                case 'sugarmaple':
+                    return 'Sugar Maple';
+                case 'redmaple':
+                    return 'Red Maple';
+                case 'stripedmaple':
+                    return 'Striped Maple';
+                case 'carolinahemlock':
+                    return 'Carolina Hemlock';
+                case 'umbrellamagnolia':
+                    return 'Umbrella Magnolia';
+                case 'cucumbermagnolia':
+                    return 'Cucumber Magnolia';
             }
         }
 
