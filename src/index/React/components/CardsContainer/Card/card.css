@@ -373,3 +373,165 @@
     height: 80% !important;
     transform: translate(-8%, 0);
 }
+
+/* American Chestnut */
+.americanchestnut .overviewImg {
+    height: 90%;
+}
+.americanchestnut .coneFruitImg {
+    height: 60%;
+}
+.americanchestnut.coneFruitImg {
+    height: 50%;
+}
+.americanchestnut .needleLeafImg {
+    height: 90%;
+}
+.americanchestnut.needleLeafImg {
+    height: 50%;
+}
+
+/* Sourwood */
+.sourwood .overviewImg {
+    height: 84%;
+}
+.sourwood.overviewImg {
+    height: 60% !important;
+}
+.sourwood .needleLeafImg {
+    height: 70%;
+}
+.sourwood.needleLeafImg {
+    height: 60% !important;
+}
+
+/* Persimmon */
+.persimmon .coneFruitImg {
+    height: 70%;
+}
+.persimmon.coneFruitImg {
+    height: 70%;
+}
+.persimmon.needleLeafImg {
+    height: 70%;
+}
+
+/* Blackhaw */
+.blackhaw .overviewImg {
+    height: 70%;
+}
+.blackhaw.overviewImg {
+    height: 50% !important;
+}
+.blackhaw .coneFruitImg {
+    height: 70%;
+}
+.blackhaw.coneFruitImg {
+    height: 70% !important;
+}
+.blackhaw.needleLeafImg {
+    height: 70% !important;
+}
+
+/* Elderberry */
+.elderberry.needleLeafImg {
+    height: 70% !important;
+}
+
+/* Tag Alder */
+.tagalder.coneFruitImg {
+    height: 70% !important;
+}
+
+/* Mountain Winterberry */
+.mountainwinterberry .overviewImg {
+    height: 70%;
+}
+.mountainwinterberry.overviewImg {
+    height: 60% !important;
+}
+
+/* Pawpaw Tree */
+.pawpaw .overviewImg {
+    height: 70%;
+}
+.pawpaw.overviewImg {
+    height: 40% !important;
+}
+.pawpaw .coneFruitImg {
+    height: 50%;
+}
+.pawpaw.coneFruitImg {
+    height: 50% !important;
+}
+.pawpaw .needleLeafImg {
+    height: 70%;
+}
+.pawpaw.needleLeafImg {
+    height: 50% !important;
+}
+
+/* Staghorn Sumac */
+.staghornsumac .overviewImg {
+    height: 70%;
+}
+.staghornsumac.overviewImg {
+    height: 40% !important;
+}
+.staghornsumac.coneFruitImg {
+    height: 60% !important;
+}
+.staghornsumac.needleLeafImg {
+    height: 50% !important;
+}
+
+/* Mockernut Hickory */
+.mockernuthickory .coneFruitImg {
+    height: 70%;
+}
+.mockernuthickory.coneFruitImg {
+    height: 50% !important;
+}
+.mockernuthickory.needleLeafImg {
+    height: 50% !important;
+}
+
+/* Shagbark Hickory */
+.shagbarkhickory.coneFruitImg {
+    height: 80% !important;
+}
+.shagbarkhickory.needleLeafImg {
+    height: 60% !important;
+}
+
+/* Pignut Hickory */
+.pignuthickory .coneFruitImg {
+    height: 90%;
+}
+.pignuthickory.coneFruitImg {
+    height: 50% !important;
+}
+.pignuthickory .needleLeafImg {
+    height: 90%;
+}
+.pignuthickory.needleLeafImg {
+    height: 50% !important;
+}
+
+/* Yellow Birch */
+.yellowbirch.needleLeafImg {
+    height: 70% !important;
+}
+
+/* Mimosa */
+.mimosa.coneFruitImg {
+    height: 60% !important;
+}
+.mimosa.needleLeafImg {
+    height: 55% !important;
+}
+
+/* Mountain Maple */
+.mountainmaple.needleLeafImg {
+    height: 60% !important;
+}

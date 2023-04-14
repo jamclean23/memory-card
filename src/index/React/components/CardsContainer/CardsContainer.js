@@ -27,9 +27,9 @@ function CardsContainer (props) {
                         {cardsToDisplay[0]}
                         {cardsToDisplay[1]}
                         {/* UNCOMMENT AFTER DEBUG */}
-                        {cardsToDisplay[2]}
+                        {/* {cardsToDisplay[2]} */}
                         {/* COMMENT AFTER DEBUG */}
-                        {/* {cards.filter((card) => card.props.treeName === 'easternredbud')} */}
+                        {cards.filter((card) => card.props.treeName === 'mountainmaple')}
                         {modal}
                         </>);
 
