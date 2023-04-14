@@ -42,7 +42,7 @@ function CardsContainer (props) {
             setLoadingBar('');
         } else {
             const cardsContainerDom = document.querySelector('.cardsContainer');
-            cardsContainerDom.style.display = 'none';
+            cardsContainerDom.style.display = 'block';
             // Disabling safari laoding bar
             setLoadingBar('');
         }
