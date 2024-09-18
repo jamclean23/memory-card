@@ -38,9 +38,9 @@
 }
 
 .slidesCounter {
-    position: fixed;
-    bottom: .25rem;
-    left: .25rem;
+    position: absolute;
+    bottom: .75rem;
+    /* left: .25rem; */
     background-color: white;
     padding: .05rem .125rem;
     border-radius: 2px;

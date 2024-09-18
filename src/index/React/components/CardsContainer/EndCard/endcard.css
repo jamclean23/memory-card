@@ -1,6 +1,5 @@
 .EndCard {
     height: 90%;
-    width: calc(var(--doc-width) * .9);
     box-shadow: 0 0 4px black;
     background-color: white ;
     border-radius: 2px;
@@ -11,7 +10,7 @@
 }
 
 .EndCard button {
-    position: fixed;
+    position: absolute;
     bottom: .25rem;
     right: .25rem;
     padding: .5rem 2rem;

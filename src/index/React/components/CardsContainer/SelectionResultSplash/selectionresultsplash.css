@@ -1,7 +1,6 @@
 
 .staticCard {
     height: 50% !important;
-    width: calc(var(--doc-width) * .9);
     box-shadow: 0 0 4px black;
     background-color: white ;
     border-radius: 2px;
@@ -14,7 +13,6 @@
 .selectionResultsSplashHeader {
     border-radius: 6px;
     background-color: white;
-    width: calc(var(--doc-width) * .9);
     padding: .25rem;
     display: flex;
     justify-content: center;
@@ -30,7 +28,7 @@
 }
 
 .selectionResultsSplashButton {
-    position: fixed;
+    position: absolute;
     bottom: .25rem;
     right: .25rem;
     padding: .5rem 2rem;
