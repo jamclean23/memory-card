@@ -1,6 +1,6 @@
 // Container for card components
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { SelectionResultSplash } from './SelectionResultSplash/SelectionResultSplash.js';
 import { EndCard } from './EndCard/EndCard.js';
 import { getTrees } from '../../../treeImageHandling.js';
@@ -23,15 +23,17 @@ function CardsContainer (props) {
     const [imagesLoaded, setImagesLoaded] = useState(0);
     const [loadingBar, setLoadingBar] = useState('');
 
+    const isSwiping = useRef(false);
+
     const cardsContent = (<>
                         {cardsToDisplay[0]}
                         {cardsToDisplay[1]}
-                        {/* UNCOMMENT AFTER DEBUG */}
                         {cardsToDisplay[2]}
-                        {/* COMMENT AFTER DEBUG */}
-                        {/* {cards.filter((card) => card.props.treeName === 'cucumbermagnolia')} */}
                         {modal}
                         </>);
+
+
+    // == LISTENERS
 
     // Images loaded counter
     useEffect(() => {
@@ -86,6 +88,8 @@ function CardsContainer (props) {
         }
     }, [complete, cardsToDisplay, modal]);
 
+
+    // == FUNCTIONS
 
     // Increment images loaded counter 
     function reportImageLoaded () {
@@ -194,6 +198,18 @@ function CardsContainer (props) {
     function handleSwiping (event) {
         const card = getCardFromTarget(event.event.target);
 
+        // Get child image frames and disable pointer events
+        if (card) {
+            const imgFrames = card.querySelectorAll('.imgFrame');
+            imgFrames.forEach((imgFrame) => {
+                imgFrame.style.pointerEvents = 'none';
+            });
+        }
+
+        if (!isSwiping.current) {
+            isSwiping.current = true;
+        }
+
         // Move card with swipe
         if (event.deltaX > 0) {
             card.style.left = event.deltaX + 'px';
@@ -207,8 +223,17 @@ function CardsContainer (props) {
     }
 
     function handleUp (event) {
+
         const card = getCardFromTarget(event.event.target);
         
+        // Get child image frames and enable pointer events
+        if (card) {
+            const imgFrames = card.querySelectorAll('.imgFrame');
+            imgFrames.forEach((imgFrame) => {
+                imgFrame.style.pointerEvents = 'all';
+            });
+        }
+
         // If card position is in the desired range, register a confirm
         let cardPosition = getComputedStyle(card).left.split('px')[0];
         if (cardPosition > 100) {
@@ -244,6 +269,9 @@ function CardsContainer (props) {
 
         return result || 'not found';
     }
+
+
+    // ==RENDER 
 
     return (
             <>
