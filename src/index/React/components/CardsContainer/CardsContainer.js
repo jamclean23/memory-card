@@ -196,15 +196,22 @@ function CardsContainer (props) {
     }
 
     function handleSwiping (event) {
+        
+        if (!event.event.target) {
+            return;
+        }
+        
         const card = getCardFromTarget(event.event.target);
 
-        // Get child image frames and disable pointer events
-        if (card) {
-            const imgFrames = card.querySelectorAll('.imgFrame');
-            imgFrames.forEach((imgFrame) => {
-                imgFrame.style.pointerEvents = 'none';
-            });
+        if (!card) {
+            return;
         }
+
+        // Get child image frames and disable pointer events
+        const imgFrames = card.querySelectorAll('.imgFrame');
+        imgFrames.forEach((imgFrame) => {
+            imgFrame.style.pointerEvents = 'none';
+        });
 
         if (!isSwiping.current) {
             isSwiping.current = true;
@@ -223,11 +230,17 @@ function CardsContainer (props) {
     }
 
     function handleUp (event) {
+        if (!event.event.target) {
+            return;
+        }
 
         const card = getCardFromTarget(event.event.target);
         
+        if (!card) {
+            return;
+        }
         // Get child image frames and enable pointer events
-        if (card) {
+        if (card && "classList" in card) {
             const imgFrames = card.querySelectorAll('.imgFrame');
             imgFrames.forEach((imgFrame) => {
                 imgFrame.style.pointerEvents = 'all';
@@ -247,10 +260,12 @@ function CardsContainer (props) {
     }
 
     function getCardFromTarget (target) {
-        if (target.classList.contains('Card')) {
-            return target;
-        } else {
-            return getCardFromTarget(target.parentElement);
+        if (target) {
+            if ("classList" in target && target.classList.contains('Card')) {
+                return target;
+            } else {
+                return getCardFromTarget(target.parentElement);
+            }
         }
     }    
 

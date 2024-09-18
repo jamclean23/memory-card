@@ -26,11 +26,6 @@ function Card (props) {
     return(
         <div 
             {...handlers} 
-            onPointerDown={props.handlePointerDown} 
-            onPointerUp={props.handlePointerUp}
-            onPointerCancel={props.handlePointerUp}
-            onPointerLeave={props.handlePointerUp}
-            onPointerMove={props.handlePointerMove}
             className={'Card ' + props.treeImgs.catName}
         >
             <div className='imgsWrapper'>
