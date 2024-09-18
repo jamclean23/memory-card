@@ -5,8 +5,15 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
 .App {
-    width: 100%;
+    max-width: 500px;
     display: grid;
     user-select: none;
+    background-color: var(--main-background-color);
 }

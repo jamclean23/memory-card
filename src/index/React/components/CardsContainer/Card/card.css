@@ -2,7 +2,7 @@
 
 .Card {
     height: 30%;
-    width: calc(var(--doc-width) * .9);
+    /* width: calc(var(--doc-width) * .9); */
     box-shadow: 0 0 4px black;
     background-color: beige ;
     border-radius: 2px;

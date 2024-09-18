@@ -1,7 +1,7 @@
 
 .cardsContainer {
     position: relative;
-    padding-inline: calc(var(--doc-width)*.06);
+    padding-inline: 1rem;
     padding-top: .5rem;
     --cards-container-height: calc(var(--doc-height)*.835);
     height: var(--cards-container-height);
